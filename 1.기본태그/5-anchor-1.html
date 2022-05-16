@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <title>하이퍼링크, anchor</title>
+  </head>
+  <body>
+    <h1>앵커태그</h1>
+    <a href="./1-heading.html">헤딩문서로 이동</a><br />
+    <a href="2-paragraph.html">문단문서로 이동</a><br />
+    <hr>
+    <a href="https://www.google.com">구글로 이동</a><br />
+    <a href="https://www.naver.com">네이버로 이동</a><br />
+    <a href="https://www.daum.net">다음으로 이동</a><br />
+    <a href="https://www.nate.com" target="_blank">네이트로 이동</a>
+    <!-- 
+      target 값 줄때 이제 언더스코어 빼도 동작하도록 바뀜
+      그치만 정석은 붙이는거..
+    -->
+    <a href="#">링크없음</a>
+    <!-- 원래 inline요소는 block요소 안에 들어가는게 맞음 -->
+    <!-- 
+      HTML5부터 바뀐 부분
+      1. a태그만 block요소를 감싸서 
+        한꺼번에 여러 태그에 링크를 줄 수 있도록 허락됨
+      2. href 생략 가능 (원래 생략하면 오류났었음)
+     -->
+    <a>링크없음2</a>
+    <a href="https://www.nate.com">
+      <h3>네이트</h3>
+      <p>네이트에서 다양한 소식을 받아보세요</p>
+    </a>
+    
+  </body>
+</html>

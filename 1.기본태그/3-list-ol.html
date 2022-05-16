@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Ordered List</title>
+  <style>
+    .title {
+      background-color: #e4f6ff;
+      padding: 12px;
+    }
+
+    .gradient-text {
+      background-image: linear-gradient(45deg, #f186ff, #5eccff);
+      background-repeat: repeat;
+      background-size: 100%;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-weight: bold;
+    }
+
+    .contents{
+      padding: 20px;
+      display: flex;
+      align-items: center;
+      align-content: center;
+      
+    }
+
+    summary {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    summary span{
+      font-size: 20px;
+      font-weight: 500;
+    }
+
+    img {
+      width: 200px;
+    }
+
+    h1 {
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 사이즈 때문에 h3을 먼저쓰는 경우는 금지 -->
+  <!-- 순차적으로 나오지 않으면 리더기가 읽지 못하는 경우 발생! -->
+  <div class="title">
+    <h1 class="gradient-text">How to Bake Some Nice Desserts.</h1>
+  </div>
+  <div class="contents">
+  <details id="details">
+    <summary>
+      <img src="https://thescranline.com/wp-content/uploads/2021/03/Dancing-Queen-Cupcakes.jpg" alt="cupcakes">
+      <span>CUPCAKES</span>
+    </summary>
+    <span>
+      <ol>
+        <li>Mix flour, baking powder, sugar, and salt.</li>
+        <li>In another bowl, mix eggs, milk, and oil.</li>
+        <li>Stir both mixtures together.</li>
+        <li>Fill muffin tray 3/4 full.</li>
+        <li>Bake for 20 minutes.</li>
+      </ol>
+    </span>
+  </details>
+  <details id="details">
+    <summary>
+      <img src="https://bakewithshivesh.com/wp-content/uploads/2020/09/IMG-8129-1-scaled.jpg" alt="">
+      <span>COOKIES</span>
+    </summary>
+    <span>
+      <ol>
+        <li>Prepare some flour, sugar, eggs and salts</li>
+        <li>Cream butter and sugar in large mixing bowl using Electric hand mixer.</li>
+        <li>Add all other ingredients except flour, and combine well.</li>
+        <li>After resting time, dust the wooden board with some flour and take the flour on board. Using Rolling pin,
+          roll out dough about 1/4 inch thickness. Shape it using cookie cutters.</li>
+        <li>Let them cool before Icing.</li>
+      </ol>
+    </span>
+  </details>
+  <details id="details">
+    <summary>
+      <img src="./images/pie.jpg" alt="pies">
+      <span>PIES</span>
+    </summary>
+    <span>
+      <ol>
+        <li>First combine all ingredients except the water.</li>
+        <li>Roll out the dough about 1/4" thick and to a few inches larger than your pie pan.</li>
+        <li>Allow for an hour in the fridge or 15 min in the freezer.</li>
+        <li>Bake for 20min at 400 deg (205C) with a piece of foil wrapping the crust.</li>
+        <li>Recipe calls for 2c. Flour, 1tsp Salt, 2/3c. Cold Unsalted Butter (or lard), 5 tbsp. ice water</li>
+      </ol>
+    </span>
+  </details>
+  </div>
+  <!--
+      <ol start="0" reversed> 
+      ol 태그에 시작번호, 역순 속성 사용 가능
+  -->
+</body>
+
+</html>

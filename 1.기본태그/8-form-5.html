@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>폼태그 실습</title>
+</head>
+
+<body>
+  <h1>여름방학 특강 신청</h1>
+  <form>
+    <fieldset>
+      <legend>수강과목</legend>
+      <label for="subj">영어회화(초급)</label> <input id="subj" type="text" value="오전 9:00 ~ 11:00" readonly>
+    </fieldset>
+    <fieldset>
+      <legend>신청자</legend>
+      <label for="name">이름</label> <input id="name" type="text" placeholder="이름을 적으시오"><br>
+      <label for="number">학번</label> <input maxlength="7" minlength="7" id="number" type="text"
+        placeholder="7자로 작성하시오"><br>
+      <label for="major">학과</label>
+      <select id="major">
+        <option value="건축공학과">건축공학과</option>
+        <option value="기계공학과">기계공학과</option>
+        <option value="산업공학과">산업공학과</option>
+        <option value="전기전자공학과">전기전자공학과</option>
+        <option value="컴퓨터공학과" selected>컴퓨터공학과</option>
+        <option value="화학공학과">화학공학과</option>
+      </select><br>
+      <label for="tel">연락처</label> 
+        <input id="tel" type="tel" placeholder="010-1234-5678">
+    </fieldset>
+    <fieldset>
+      <legend>교재 주문</legend>
+      <label for="books">교재</label><input id="books" type="range"><br>
+      <label for="worksheet">워크시트</label><input id="worksheet" type="number"><br>
+      <label for="group_order">단체주문</label><input id="group_order" type="number"><br>
+      <label for="interest">관심분야 - 문법, 어휘, 회화, 리스닝</label><input id="interest" type="text">
+    </fieldset>
+    <fieldset>
+      <legend>신청과 재입력</legend>
+      <input type="submit" value="submit">
+      <input type="reset" value="reset">
+    </fieldset>
+  </form>
+</body>
+
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>이미지 태그, image</title>
+</head>
+
+<body>
+  <h1>이미지 태그</h1>
+  <!-- 
+      경로 지정 시 역슬래시도 사용 가능 
+      img src=".\images\fox.jpg"
+      img는 'INLINE' 태그다. 헷갈리니 주의하기.
+    -->
+  <!-- 
+      alt값에 '사진' 이라고 붙이지 않아도 된다.
+      alt값은 이미지를 불러오지 못한 경우에도 표시된다. 최대한 자세하게.
+      그러나 요즘 트렌드는 img 태그 사용 빈도가 현저히 떨어져. svg등을 사용해 직접 그림.
+      웹접근성을 이유로, 웹페이지 내 동영상 자동 재생은 금지하고 있다. (스크린 리더기와의 음성 충돌)
+     -->
+  <a href="https://www.naver.com" target="_blank">
+    <img src="./images/fox.jpg" alt="숲을 배경으로, 정면을 응시하는 사막여우" />
+  </a>
+  <br />
+  <a href="https://www.daum.net" target="_blank">
+    <img src="./images/puppy4.jpg" alt="모래 위를 달리는 작은 갈색 푸들" width="168" />
+  </a>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>You Won</title>
+  <style>
+    body {
+      background: #ffa2a2;
+    }
+
+    .eyes {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 100%;
+      text-align: center;
+    }
+
+    .eye {
+      width: 150px;
+      height: 150px;
+      background: #fff;
+      display: inline-block;
+      margin: 20px;
+      border-radius: 50%;
+      position: relative;
+      overflow: hidden;
+      animation: blink 3s infinite;
+    }
+
+    @-webkit-keyframes blink {
+
+      0%,
+      100% {
+        transform: scale(1, .05);
+      }
+
+      5%,
+      95% {
+        transform: scale(1, 1);
+      }
+    }
+
+    .ball {
+      width: 40px;
+      height: 40px;
+      background: #000;
+      position: absolute;
+      /* relative */
+      top: 50%;
+      left: 50%;
+      transform: translate(50%, 50%);
+      border-radius: 50%;
+      border: 10px solid #6d6875;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>You Won the Lottery!</h1>
+  <h2>Congratulations!</h2>
+  <div class="eyes" id="eyes">
+    <div class="eye">
+      <div class="ball"></div>
+    </div>
+
+    <div class="eye">
+      <div class="ball"></div>
+    </div>
+  </div>
+</body>
+<script>
+  let Ball = document.getElementsByClassName("ball");
+  document.onmousemove = function () {
+
+    //get innerWidth,innerheight for browser
+
+    //get horizontal coordinate of the onmousemove
+    let x = event.clientX * 100 / window.innerWidth + "%";
+
+    //get the verticle coordinate of onmousemove
+    let y = event.clientY * 100 / window.innerHeight + "%";
+
+    for (let i = 0; i < 2; i++) {
+      Ball[i].style.left = x;
+      Ball[i].style.top = y;
+      Ball[i].style.transform = "translate(-" + x + ", -" + y + ")";
+    }
+
+  }
+</script>
+
+</html>

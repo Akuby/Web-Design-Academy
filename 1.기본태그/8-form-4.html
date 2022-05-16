@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>폼태그</title>
+</head>
+
+<body>
+  <form>
+    <fieldset>
+      <legend>개인정보</legend>
+      <label>이름<input type="text"></label><br />
+      <label for="email">이메일</label><input type="email" id="email"><br />
+      <!-- 
+        label로 input을 감싸지 않은 경우(에만),
+        label의 for 속성에 해당 input 요소의 id를 넣어주면
+        label만 눌러도 포커싱이 간다.
+
+        대부분 이 경우기 때문에 for 속성은 필수적.
+      -->
+
+    </fieldset>
+    <input type="submit">
+  </form>
+</body>
+
+</html>

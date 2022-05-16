@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블태그 실습</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+    th, td {
+      border: 1px solid #000;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <caption>품질마크 연도별 통계</caption>
+    <colgroup>
+      <col style="background-color: rgb(255, 209, 124); width: 100px;" />
+      <col span="2" style="background-color: rgb(255, 255, 144);"/>
+      <col style="background-color: rgb(115, 222, 255);" />
+    </colgroup>
+    <thead>
+      <tr>
+        <th scope="col">연도</th>
+        <th scope="col" id="applyedsites">신청 사이트 수</th>
+        <th scope="col" id="certifiedsites">인증 사이트 수</th>
+        <th scope="col" id="ratio">합격률</th>
+      </tr>
+    </thead>
+    <!-- 
+      원래 순서는 thead, tfoot, tbody 순이었다. (3년 전)
+      업데이트 후 바뀜
+    -->
+    <tbody>
+      <tr>
+        <th scope="row" id="2007">2007년</th>
+        <td headers="2007 applyedsites">40</td>
+        <td headers="2007 certifiedsites">15</td>
+        <td headers="2007 ratio">37.5%</td>
+      </tr>
+      <tr>
+        <th scope="row" id="2008">2008년</th>
+        <td headers="2008 applyedsites">40</td>
+        <td headers="2008 certifiedsites">15</td>
+        <td headers="2008 ratio">37.5%</td>
+      </tr>
+      <tr>
+        <th scope="row" id="2009">2009년</th>
+        <td headers="2009 applyedsites">40</td>
+        <td headers="2009 certifiedsites">15</td>
+        <td headers="2009 ratio">37.5%</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row">합계</th>
+        <td headers="2007 2008 2009 applyedsites">1489</td>
+        <td headers="2007 2008 2009 certifiedsites">448</td>
+        <td headers="2007 2008 2009 ratio">30.09%</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+</html>

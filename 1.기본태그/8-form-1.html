@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>폼 태그, form</title>
+</head>
+
+<body>
+  <form>
+    <!--Block 요소다-->
+    <input type="text" maxlength="10" readonly value="수정불가" name="idName" placeholder="아이디를 입력하세요." /> <br />
+    <!-- name : 카테고리. form 태그의 자식 태그에만 사용 가능.  -->
+    <!-- value : 실제 값. 유저가 입력하면 사라지는 placeholder와 다르다. -->
+    <input type="password" disabled name="password" placeholder="입력불가" />
+    <br />
+    <button>button</button>
+    <input type="button" value="input / button" />
+    <input type="submit" value="input / submit" />
+    <input type="reset" value="input / reset" />
+    <!-- 
+      a, img, input 태그는 모두 inline
+      이 중, a태그는 그 자체만으로는 영역을 가지지 않는다. 
+    -->
+
+    <!--이미지가 들어간다? alt는 무조건 따라간다!-->
+    <input type="image" src="./images/login.jpg" alt="로그인하기" />
+    <br />
+    <input type="checkbox" name="hobby" value="swimming">수영
+    <input type="checkbox" name="hobby" value="stroll">산책
+    <input type="checkbox" name="hobby" value="gaming">게임
+    <br />
+    <input type="radio" name="agree" value="yes">동의합니다.
+    <input type="radio" name="agree" value="no" >동의하지 않습니다.
+    <br />
+    <input type="file">
+    <br />
+    <textarea name="comment" cols="30" rows="10" placeholder="문의 내용을 입력하세요."></textarea>
+    <!-- textarea의 cols 속성은 브라우저마다 height가 다르기에 사용을 지양한다. -->
+    <br />
+    <select multiple>
+      <optgroup label="HTML">
+        <option value="HTML4">HTML4</option>
+        <option value="HTML5">HTML5</option>
+      </optgroup>
+      <option value="CSS" selected>CSS</option>
+      <option disabled value="Javascript">Javascript</option>
+    </select>
+    <!-- disabled 속성으로 포커싱이 갈 수 없게 한다. css에서 enabled 속성이 또 나온다. -->
+    <!-- readonly 속성으로 수정을 금지할 수 있다. -->
+    <!-- checked 속성으로 checkbox나 radio에 미리 체크해둘 수 있다. -->
+    <!-- selected 속성으로 select 내 특정 option 태그를 먼저 보여줄 수 있다. -->
+    <!-- multiple 속성으로 select 내 option 태그들을 펼쳐서 보여줄 수 있다. -->
+
+  </form>
+</body>
+
+</html>

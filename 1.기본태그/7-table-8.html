@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>객실소개</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      border: 1px solid #000;
+      width: 150px;
+      height: 30px;
+    }
+
+    caption {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>객실소개</h1>
+  <h2>도미토리</h2>
+
+  <table>
+    <caption>요안도라 객실</caption>
+    <thead>
+      <tr>
+        <th scope="col" id="roomname">방이름</th>
+        <th scope="col" id="subject">대상</th>
+        <th scope="col" id="room-sized">크기</th>
+        <th scope="col" id="price">가격</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="yuchaeroom">유채방</th>
+        <td headers="yuchaeroom subject">여성 도미토리</td>
+        <td rowspan="3" headers="yuchaeroom dongbaegroom room-sized">4인실</td>
+        <td rowspan="4" headers="yuchaeroom dongbaegroom cheonhyehyangroom price">1인 20,000원</td>
+      </tr>
+      <tr>
+        <th rowspan="2" scope="row" id="dongbaegroom">동백방</th>
+        <td headers="dongbaegroom subject">동성 도미토리</td>
+      </tr>
+      <tr>
+        <td headers="dongbaegroom subject">가족1팀</td>
+      </tr>
+      <tr>
+        <th scope="row" id="cheonhyehyangroom">천혜향방</th>
+        <td headers="cheonhyehyangroom subject">-</td>
+        <td headers="cheonhyehyangroom room-sized">2인실</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td colspan="4">바깥채 전체를 렌트합니다</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
