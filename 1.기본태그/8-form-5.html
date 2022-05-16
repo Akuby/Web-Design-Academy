@@ -32,10 +32,27 @@
     </fieldset>
     <fieldset>
       <legend>교재 주문</legend>
-      <label for="books">교재</label><input id="books" type="range"><br>
-      <label for="worksheet">워크시트</label><input id="worksheet" type="number"><br>
-      <label for="group_order">단체주문</label><input id="group_order" type="number"><br>
-      <label for="interest">관심분야 - 문법, 어휘, 회화, 리스닝</label><input id="interest" type="text">
+      <label for="books">교재</label><input id="books" type="range" value="0" max="10" min="0"><br>
+      <label for="worksheet">워크시트</label><input id="worksheet" type="number" max="10" min="0"><br>
+      <label for="group_order">단체주문</label><input id="group_order" type="number" min="0" max="50" step="10"><br>
+      <label for="pre">관심분야 - 문법, 어휘, 회화, 리스닝</label>
+      <input type="text" id="pre" list="interest">
+      <datalist id="interest">
+        <option value="grammar" label="문법"></option>
+        <option value="voca" label="어휘"></option>
+        <option value="speaking" label="회화"></option>
+        <option value="listening" label="리스닝"></option>
+
+        <!-- 
+          input 태그에 list 속성을 주고, 값으로 datalist의 id를 주면 
+          input에 datalist가 연결된다! 짜잔!
+
+          datalist 내 option의 value는 해당 값, label은 부가 설명으로 나온다.
+          사용자가 클릭 시 input에 들어가는 값은 당연히 value.
+        -->
+
+
+      </datalist>
     </fieldset>
     <fieldset>
       <legend>신청과 재입력</legend>
