@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>블락인라인</title>
+  <style>
+    div {
+      margin-left: 500px;
+    }
+
+    h1 span {
+      color: red;
+    }
+
+    a {
+      border: 1px solid black;
+      /* a태그는 너비를 가지지 않는다 */
+      width: 100px;
+      /* 그래서 block 속성을 줘야 너비를 가진다 */
+      display: block;
+    }
+
+    img {
+      width: 100px;
+    }
+
+    input {
+      width: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h1><span>Lorem</span> ipsum</h1>
+    <!-- <a href="#">lorem ipsum</a> -->
+    <p>lorem ipsum</p>
+  </div>
+
+
+  <!-- 
+  인라인요소 
+  a, hr, img, input, form 안에 들어가는 태그 ( textarea, select 등 )
+  
+  이 중 a 태그만이 그 자체로 너비값을 가지지 않아서 display : block을 줘야 한다.
+-->
+
+  <h2>인라인요소들</h2>
+  <hr>
+  <a href="#">로그인</a> <br>
+  <img src="./images/login.jpg" alt="로그인"> <br>
+  <input type="text">
+
+  <!-- 
+  의미없이 쓰이는 그룹태그 2가지
+  div : block / inline 요소를 묶을 때 사용하는 block group tag.
+  span : inline 요소를 묶을 때 사용하는 inline group tag.
+-->
+</body>
+
+</html>
