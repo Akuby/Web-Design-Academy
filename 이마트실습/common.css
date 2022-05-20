@@ -1,0 +1,42 @@
+@charset "utf-8";
+/* 초기화 */
+* {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+h2{
+  /* display : none; 은 스크린리더기가 읽지 않음 */
+  position: absolute;
+  left: -500px;
+}
+/* 헤더 */
+div#wrap {
+  
+}
+header {
+  width: 1000px;
+  height: 128px;
+  margin: 0 auto;
+  background-color: pink;
+}
+
+h1{
+  width: 154px;
+}
+
+nav#lnb {
+  width: 100%;
+  height: 37px;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+nav#lnb ul {
+  width: 1000px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: flex-end;
+}
