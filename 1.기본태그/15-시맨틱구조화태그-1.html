@@ -9,8 +9,10 @@
 <body>
   <!-- 광고 배너는 aside tag 
     article과 section의 차이 ?
-    sectioning 요소는 모두 제목을 가져야한다. 고로 footer는 sectioning 요소가 아니다. 
-    sectioning 요소로 구조화되면, h2가 h1이 되더라도 구조는 멀쩡하다, 물론 유효성 검사에서는 경고가 뜬다. -->
+    sectioning 요소는 모두 제목을 가져야한다. 고로 footer와 main은 sectioning 요소가 아니다. 
+    sectioning 요소로 구조화되면, h2가 h1이 되더라도 구조는 멀쩡하다, 물론 유효성 검사에서는 경고가 뜬다. 
+    sectioning 태그 : nav, section, article, aside
+  -->
 
   <div>
     <a href="#">연예 바로가기</a>
@@ -38,14 +40,14 @@
     <section>
       <h2>연예</h2>
       <p>오늘자 핫한 연예 소식을 알려드립니다</p>
-      <section>
+      <article>
         <h2>방송</h2>
         <p>아이돌 신곡소식입니다</p>
-      </section>
-      <section>
+      </artic>
+      <article>
         <h2>영화</h2>
         <p>코로나 때문에 연기된 영화개봉소식입니다</p>
-      </section>
+      </article>
     </section>
 
     <section>
@@ -60,9 +62,12 @@
   </main>
   <hr>
   <!-- 사이트와 무관한 내용(광고)은 aside 태그를 사용 -->
+  <!-- 퀵메뉴, 배경 이미지 등 광고, 배너 외 사이트와 관련이 있지만 없어도 괜찮은 내용 -->
+  <!-- 주로 main 바로 밑에 위치한다 -->
   <aside>
     <h2>웹툰광고</h2>
     <p>새로운 웹툰의 세계로 빠져봅시다</p>
+    <p>광고, 배너 외 사이트와 관련이 있지만 없어도 괜찮은 내용</p>
   </aside>
   <!-- 큰 뭉탱이를 나눌 때만 사용하는 hr. 남용하지 말 것. -->
   <hr>
