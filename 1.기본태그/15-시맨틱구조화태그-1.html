@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>시맨틱구조화태그 | Semantic tags</title>
+</head>
+
+<body>
+  <!-- 광고 배너는 aside tag 
+    article과 section의 차이 ?
+    sectioning 요소는 모두 제목을 가져야한다. 고로 footer는 sectioning 요소가 아니다. 
+    sectioning 요소로 구조화되면, h2가 h1이 되더라도 구조는 멀쩡하다, 물론 유효성 검사에서는 경고가 뜬다. -->
+
+  <div>
+    <a href="#">연예 바로가기</a>
+    <a href="#">스포츠 바로가기</a>
+    <a href="#">IT 바로가기</a>
+  </div>
+
+  <header>
+    <h1>코리아아이티 신문사</h1>
+  </header>
+
+  <nav>
+    <!-- 이렇게 li들을 묶은 통 제목을 넣는게 좋지만 다른 방법도 있다. -->
+    <!-- 각 li마다 h2로 감싸주는 것이다. -->
+    <h2>신문사 주요메뉴</h2>
+    <ul>
+      <li>연예</li>
+      <li>스포츠</li>
+      <li>IT</li>
+    </ul>
+  </nav>
+  <hr>
+  <!-- 사이트 주요 내용이 시작되었다는 뜻으로 삽입하는 main 태그 -->
+  <main>
+    <section>
+      <h2>연예</h2>
+      <p>오늘자 핫한 연예 소식을 알려드립니다</p>
+      <section>
+        <h2>방송</h2>
+        <p>아이돌 신곡소식입니다</p>
+      </section>
+      <section>
+        <h2>영화</h2>
+        <p>코로나 때문에 연기된 영화개봉소식입니다</p>
+      </section>
+    </section>
+
+    <section>
+      <h2>스포츠</h2>
+      <p>각종 국내외 스포츠 뉴스입니다</p>
+    </section>
+
+    <section>
+      <h2>IT</h2>
+      <p>새롭게 부상하는 IT기술에 대한 소식입니다</p>
+    </section>
+  </main>
+  <hr>
+  <!-- 사이트와 무관한 내용(광고)은 aside 태그를 사용 -->
+  <aside>
+    <h2>웹툰광고</h2>
+    <p>새로운 웹툰의 세계로 빠져봅시다</p>
+  </aside>
+  <!-- 큰 뭉탱이를 나눌 때만 사용하는 hr. 남용하지 말 것. -->
+  <hr>
+  <footer>
+    <ul>
+      <li>개인정책보호약관</li>
+      <li>개인정책보호약관</li>
+    </ul>
+    <small>&copy;copyright all rights reserved.</small>
+    <p>대구광역시 중구 남일동</p>
+    <address>tel.053)1111-2345 | email</address>
+  </footer>
+</body>
+
+</html>
