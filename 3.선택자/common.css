@@ -1,0 +1,16 @@
+@charset "utf-8";
+h1 {
+  color: rgb(255, 55, 115);
+}
+
+h2 {
+  color: rgb(156, 0, 104);
+}
+
+hr {
+  display: none;
+}
+
+div {
+  background-color: rgb(255, 239, 245);
+}

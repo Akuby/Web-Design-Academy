@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>스타일시트 적용</title>
+  <style>
+    /*임베디드로 적용 시, style 태그 내부는 css 형식의 주석 사용*/
+    h2 {
+      color: blue;
+    }
+  </style>
+  <link rel="stylesheet" href="./common.css">
+</head>
+
+<body>
+  <h1>CSS 적용하기</h1>
+  <p>스타일시트를 적용하는 방법엔 다음의 세가지가 있다.</p>
+  <hr>
+  <div>
+    <h2 style="color: red;">인라인 적용방법</h2>
+    <p>각 태그마다 직접 스타일시트를 적용한다</p>
+    <h2>임베디드 적용방법</h2>
+    <p>헤드 태그 내 스타일 태그를 사용하여 적용한다</p>
+    <h2>외부파일을 연결하는 적용방법</h2>
+    <p>CSS파일을 만들어서 HTML문서와 연결하여 적용한다</p>
+  </div>
+</body>
+
+</html>
