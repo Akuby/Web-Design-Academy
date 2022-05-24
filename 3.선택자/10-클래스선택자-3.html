@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko" dir>
+<head>
+  <meta charset="UTF-8">
+  <title>클래스 선택자</title>
+  <style>
+    /* 기본스타일 */
+    table {
+      border-collapse: collapse;
+    }
+    td {
+      border: 1px solid black;
+      width: 150px;
+      height: 150px;
+      font-size: 30px;
+    }
+
+    .td_style {
+      background-color: black;
+      color: white;
+    }
+
+    .td4 {
+      color: yellow;
+    }
+    
+
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td class="td_style td1">1행1열</td>
+      <td>1행2열</td>
+    </tr>
+    <tr>
+      <td>2행1열</td>
+      <td class="td_style td4">2행2열</td>
+    </tr>
+  </table>
+</body>
+</html>

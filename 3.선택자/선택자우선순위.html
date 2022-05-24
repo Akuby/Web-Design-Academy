@@ -1,12 +1,29 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>선택자우선순위</title>
+  <style>
+    /* id > classname > tagname */
+    #header {
+      color: green;
+    }
+
+    .header {
+      color: blue;
+    }
+
+    div#wrap h1 {
+      color: red;
+    }
+  </style>
 </head>
+
 <body>
-  <div>
-    <h1>선택자 우선순위</h1>
+  <div id="wrap">
+    <h1 id="header" class="header">선택자 우선순위</h1>
   </div>
 </body>
+
 </html>
