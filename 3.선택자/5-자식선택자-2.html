@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>자식선택자</title>
+  <style>
+    a {
+      text-decoration: none;
+      color: black;
+    }
+    nav > ul > li > a {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li>
+        <a href="#">순서도1</a>
+      </li>
+      <li>
+        <a href="#">순서도2</a>
+        <ul>
+          <li><a href="#">순서도2-1</a></li>
+          <li><a href="#">순서도2-2</a></li>
+        </ul>
+      </li>
+    </ul>
+  </nav>
+</body>
+</html>

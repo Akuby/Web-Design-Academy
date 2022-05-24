@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>형제선택자</title>
+  <style>
+    /* h1 바로 뒤쪽의 형제 요소만! */
+    h1 + h2 {
+      color: red;
+    }
+    /* h1 뒤쪽의 형제 요소 모두! */
+    h1 ~ h2 { 
+      background-color: yellow;
+    }
+    ul li + li {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <h2>Header - 2</h2>
+  <h1>Header - 1</h1>
+  <h2>Header - 2</h2>
+  <h2>Header - 2</h2>
+  <h2>Header - 2</h2>
+  <h2>Header - 2</h2>
+  <ul>
+    <li>Selector1</li>
+    <li>Selector2</li>
+  </ul>
+</body>
+</html>
