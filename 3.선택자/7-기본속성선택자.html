@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>기본속성선택자</title>
+  <style>
+
+    form {
+      margin-bottom: 50px;
+    }
+
+    /* [특정 속성값]을 가진 input 태그를 선택 */
+    input {
+      border: none;
+      /* outline: none; 접근성면에서 권장하지 않음 */
+    }
+
+    input[type="text"] { 
+      background-color: red;
+    }
+    
+    input[type="password"] {
+      background-color: blue;
+    }
+
+    img[src="./images/node.jpg"] {
+      border: 5px solid red;
+    }
+  </style>
+
+
+
+</head>
+<body>
+  <form>
+    <input type="text" autofocus>
+    <input type="password">
+  </form>
+  <div>
+    <img src="./images/node.jpg" width="200" alt="모던 웹을 위한 node.js 프로그래밍">
+    <img src="./images/ux.gif " width="200" alt="모던 웹을 위한 실시간 사용자 경험 프로그래밍">
+  </div>
+</body>
+</html>

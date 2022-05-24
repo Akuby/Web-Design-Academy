@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>아이디 선택자</title>
+  <style>
+    /* 초기화 */
+    body, h1 {
+      margin: 0;
+    }
+    div#header {
+      width: 1000px;
+      height: 200px;
+      background-color: antiquewhite;
+    }
+    div#wrap {
+      overflow: hidden;
+      width: 1000px;
+      background-color: rgb(184, 255, 255);
+    }
+    div#content {
+      width: 700px;
+      height: 500px;
+      background-color: rgb(255, 255, 204);
+      float: left;
+    }
+    div#aside {
+      width: 200px;
+      height: 300px;
+      background-color: pink;
+      float: right;
+    }
+  </style>
+</head>
+<body>
+  <!-- 아이디 적용 시 주의사항 -->
+  <!-- 1. 중복적용 금지 -->
+  <!-- 2. 아이디명은 숫자로 시작할 수 없다 -->
+  <!-- 3. 특수기호 및 한글 사용금지 (단, _만 허용) -->
+  <div id="header">
+    <h1>Header</h1>
+  </div>
+  <div id="wrap">
+    <div id="content">
+      <h2>Content</h2>
+    </div>
+    <div id="aside">
+      <h2>Aside</h2>
+    </div>
+  </div>
+</body>
+</html>
