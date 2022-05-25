@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>상태선택자</title>
+  <style>
+
+    /* 속성명으로 구분 */
+    /* input[disabled] {
+      background-color: gray;
+    } */
+
+
+    /* 상태명으로 구분 */
+    input:enabled {
+      background-color: yellow;
+    }    
+    input:disabled {
+      background-color: gray;
+    }
+
+    input:focus {
+      background-color: blue;
+      color: white;
+    }
+
+    /* 자세하게 적을 수록 우선순위가 올라간다. 그래서 아래 항목은 color : white;만 적용됨. */
+    input[type="checkbox"]:checked + input[type="text"] {
+      background-color: pink;
+    }
+    
+  </style>
+</head>
+<body>
+  <h1>Enabled</h1>
+  <input type="text" autofocus required>
+  <h1>Disabled</h1>
+  <input type="text" disabled readonly>
+  <br>
+  <input type="checkbox" checked>
+  <input type="text"><br>
+  <input type="checkbox">
+  <input type="text"><br>
+</body>
+</html>

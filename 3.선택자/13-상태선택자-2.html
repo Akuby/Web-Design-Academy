@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      width: 650px;
+      height: 300px;
+      border: 1px solid black;
+      overflow: hidden;
+      transition: 1s;
+      background-color: rgb(255, 223, 228);
+      color: rgb(255, 72, 102);
+    }
+
+    input[type="checkbox"] {
+      display: none;
+    }
+
+    input[type="checkbox"]:checked + div {
+      height: 0px;
+      background-color: transparent;
+      color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <label for="check">다음 사항을 보기 위해 텍스트를 클릭하시오</label>
+  <input type="checkbox" id="check" checked>
+  <div>
+    <h1>lorem ipsum</h1>
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Inventore ipsa rerum maxime quibusdam repellendus quidem, iusto nesciunt fuga aspernatur pariatur soluta suscipit dolore cum nemo quo provident natus quae molestias.</p>
+  </div>
+</body>
+</html>
