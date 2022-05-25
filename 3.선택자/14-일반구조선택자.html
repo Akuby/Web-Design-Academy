@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>일반구조선택자</title>
+  <style>
+    /* p 태그 중에, 다른 태그와 함께 세아렸을 때, n번째 자식인 p태그 '한테만' 적용 */
+    /* 그래서 이 상태에서 body에 h1 태그를 삽입하면 '나 첫번째' 내용의 태그는
+       p태그 중에서는 첫 번째지만, 다른 요소와 함께 봤을 때는 아니기 때문에 적용되지 않음 */
+    p:first-child {
+      color: red;
+    }
+    p:last-child {
+      color: red;
+    }
+    p:nth-child(odd) {
+      background-color: yellow;
+    }
+    p:nth-child(even) {
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <p>나 첫번째</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>lorem ipsum dolor sit amet.</p>
+  <p>나 마지막</p>
+</body>
+</html>
