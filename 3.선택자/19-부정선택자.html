@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>부정선택자</title>
+  <style>
+    /* 느낌표 사용 아님! */
+    /* :not([원하지않는속성값]) */
+    /* 앞에 아무것도 적지 않으면 *를 적은 걸로 인식, 식이 모든 요소에 적용된다. */
+    input:not([type="password"]) {
+      background-color: cyan;
+    }
+
+    /* :root 는 최상위 선택자. 잘 사용하진 않지만 알아는 둘 것. */
+  </style>
+</head>
+<body>
+  <input type="text"><br>
+  <input type="password"><br>
+  <input type="tel"><br>
+  <input type="password"><br>
+  <input type="number"><br>
+  <input type="text">
+</body>
+</html>
