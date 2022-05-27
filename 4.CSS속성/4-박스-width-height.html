@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      background: #fca3cf;
+      width: 300px;
+      height: 200px;
+    }
+
+    span {
+      display: block;
+      background: #a3fccb;
+      width: 300px;
+      height: 200px;
+    }
+
+    a {
+      background: #a3fccb;
+      display: block;
+      width: 300px;
+      height: 200px;
+    }
+
+    /* 그 자체로 영역을 가지고 있는 input이나 img 태그는 */
+    /* inline태그라도 width, height 값 적용이 가능하다 */
+    /* 그러나 display:block;을 주지 않는 이상 여전히 inline태그 취급 된다 */
+
+    input {
+      width: 300px;
+      height: 150px;
+      background: #a3fccb
+    }
+
+    img {
+      width: 300px;
+      background: #a3fccb
+    }
+
+    /* inline요소 정렬 기준은 텍스트 베이스라인. */
+    /* 텍스트와 이미지가 같은 기준선 위로 정렬된다. */
+    /* input태그의 height가 몇이든 간에 그 안의 텍스트가 기준이란 말. */
+
+  </style>
+</head>
+
+<body>
+  <div>블락 그룹태그</div>
+  <span>인라인 그룹태그</span>
+  <a href="#">하이퍼링크 앵커태그</a>
+  <input type="text" placeholder="인풋태그">
+  <img src="./images/scene1.jpg" alt="">
+</body>
+
+</html>
