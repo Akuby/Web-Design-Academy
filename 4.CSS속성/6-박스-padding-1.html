@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 초기화 */
+    body {
+      margin: 0;
+    }
+    /* padding */
+    div {
+      width: 200px;
+      height: 200px;
+      border: 10px solid #000;
+      margin: 50px 0 0 50px;
+      padding: 50px 0 0 50px;
+      /* padding은 요소 내 공간을 주는 속성으로
+        너비, 높이에 영향을 준다 
+        원래 너비, 높이를 유지하려면
+        padding값만큼을 뺀 값을 적용해야 한다.
+        그러나...
+        box-sizing 속성을 사용하면 간편하다.*/
+      /* box-sizing: border-box; */
+    }
+  </style>
+</head>
+<body>
+  <div>공간있어요</div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>box-sizing</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      margin: 20px;
+      padding: 20px;
+      color: white;
+      font-size: 20px;
+    }
+    div:first-child {
+      background: #f00;
+    }
+    div:nth-of-type(2) {
+      background: #00f;
+      /* 거의 필수적인 속성 */
+      box-sizing: border-box;
+    }
+  </style>
+</head>
+<body>
+  <div>패딩영역</div>
+  <div>패딩영역</div>
+</body>
+</html>

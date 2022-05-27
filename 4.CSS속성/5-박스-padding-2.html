@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>padding의 이해</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    /* #parent의 padding에 값을 주는 경우 */
+
+    #parent {
+      width: 200px;
+      /* height: 200px; */
+      background-color: black;
+      padding: 200px 0 0 200px;
+      /* 이 경우 parent의 높이값을 없애도 적용되는 이유는
+         padding값에 의해 자동으로 계산되기 때문이다. */
+    }
+
+    #child {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+    }
+
+    /* #child의 margin에 값을 주는 경우 
+    
+    #parent {
+      width: 400px;
+      height: 400px;
+      background-color: black;
+    }
+
+    #child {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      margin: 200px 0 0 200px;
+    }
+      부모의 첫번째 자식에게 margin값으로 top을 주면, 부모가 같이 밀려난다.
+      다른 속성을 추가 ( 부모에 overflow:hidden이나 자식에 position:absolte 등)
+      해도 되지만, 그럴 필요조차 없는 padding 값을 조작하는게 선호된다. */
+    
+  </style>
+</head>
+
+<body>
+  <div id="parent">
+    <div id="child"></div>
+  </div>
+</body>
+
+</html>

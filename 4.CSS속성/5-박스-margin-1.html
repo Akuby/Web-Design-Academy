@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>박스 - margin</title>
+  <style>
+    body {
+      /* margin-top: 50px;
+      margin-right: 20px;
+      margin-bottom: 100px;
+      margin-left: 50px; */
+      /* margin: 20px 50px 100px 20px; 상 좌 하 우 */
+      /* margin: 50px 20px; 상하 좌우 */
+      /* margin: 50px 20px 100px; 상 좌우 하 */
+      /* margin: 50px; 상하좌우 */
+      margin: 0;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+    }
+
+    div#box1 {
+      background: #ff8989;
+      margin-bottom: 50px;
+    }
+
+    div#box2 {
+      background: #89d0ff;
+      margin-top: 50px;
+    }
+
+    /* 상하 margin이 중첩되는 경우, 중첩되는 값 중 큰 값 '하나만' 적용된다. */
+    /* 좌우 margin은 상관 없다. */
+
+    /* 초창기 문단 구조 상 허용한 것인데, 그래서 상하 margin에만 적용되는 것이다. */
+  </style>
+</head>
+
+<body>
+  <div id="box1"></div>
+  <div id="box2"></div>
+</body>
+
+</html>
