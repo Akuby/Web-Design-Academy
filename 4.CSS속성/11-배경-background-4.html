@@ -4,14 +4,35 @@
   <meta charset="UTF-8">
   <title>네이버 로고 적용하기</title>
   <style>
+
+    html, body {
+      height: 5000px;
+    }
+
     h1 {
       width: 445px;
-      height: 105px;
+      /* 높이값 생략가능 */
+      /* 자식의 높이(105px)를 최소한으로 가지기 때문 */
     }
     h1 a {
       display: block;
+      /* 너비값 생략가능 */
+      /* 부모의 너비(100%)를 상속받기 때문 */
       height: 105px;
-      background: url(./images/naver.png) 0 552px;
+      background: url(./images/naver.png) 0 -316px no-repeat;
+      /* repeat 속성 때문에 줘야하는 position 값이 달라짐 */
+      text-indent: -5000px;
+    }
+    #up {
+      display: block;
+      position: fixed;
+      width: 100px;
+      height: 100px;
+      bottom: 30px;
+      right: 40px;
+      background: url(./images/naver.png) -408px -424px no-repeat;
+      /* 그러니까 꼭 no-repeat 넣어주기!! */
+      text-indent: -5000px;
     }
   </style>
 </head>
@@ -19,5 +40,6 @@
   <h1>
     <a href="https://www.naver.com" target="_blank">네이버</a>
   </h1>
+  <a href="#" id="up">up</a>
 </body>
 </html>
