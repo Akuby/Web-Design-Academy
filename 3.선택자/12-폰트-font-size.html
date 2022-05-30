@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>폰트속성</title>
+  <style>
+    body {
+      font-size: 12px;
+      margin: 0;
+    }
+
+    h1 {
+      font-size: 3em;
+    }
+
+    p {
+      font-size: 36px;
+      margin: 0;
+    }
+
+    p.style2 {
+      font-size: 3em;
+    }
+
+    p.style3 {
+      font-size: 300%;
+    }
+
+    p.style4 {
+      font-size: 1rem;
+      /* root + em. 무조건 html의 크기 정보를 상속받음(16px). */
+    }
+
+    p.style5 {
+      font-size: 5vw;
+      /* vw - viewport width 기준 : 100vw */
+    }
+
+    p.style6 {
+      font-size: 5vh;
+      /* vh - viewport height 기준 : 100vh */
+    }
+
+    /* if width=1000px, 1vw = 10px (1/100) */
+    section {
+      background: #9ec4d5;
+      /* 높이를 설정할 때, 100%로 하려면 조건이 까다롭다.(모든 부모가 height값을 가져야함) */
+      height: 100vh;
+      /* 세로 스크롤바가 있을 땐, 100vw 보다는 그냥 100% 사용하기 */
+      width: 100vw;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Lorem Ipsum</h1>
+  <p class="style1">Lorem Ipsum</p>
+  <p class="style2">Lorem Ipsum</p>
+  <p class="style3">Lorem Ipsum</p>
+  <p class="style4">Lorem Ipsum</p>
+  <p class="style5">Lorem Ipsum</p>
+  <p class="style6">Lorem Ipsum</p>
+  <section>
+    <p>브라우저 높이의 100% 적용</p>
+  </section>
+</body>
+
+</html>

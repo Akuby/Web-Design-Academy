@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <title>네이버 로고 적용하기</title>
   <style>
-
-    html, body {
+    html,
+    body {
       height: 5000px;
     }
 
@@ -14,6 +15,7 @@
       /* 높이값 생략가능 */
       /* 자식의 높이(105px)를 최소한으로 가지기 때문 */
     }
+
     h1 a {
       display: block;
       /* 너비값 생략가능 */
@@ -23,7 +25,8 @@
       /* repeat 속성 때문에 줘야하는 position 값이 달라짐 */
       text-indent: -5000px;
     }
-    #up {
+
+    /* #up {
       display: block;
       position: fixed;
       width: 100px;
@@ -31,15 +34,40 @@
       bottom: 30px;
       right: 40px;
       background: url(./images/naver.png) -408px -424px no-repeat;
-      /* 그러니까 꼭 no-repeat 넣어주기!! */
       text-indent: -5000px;
+    } */
+
+    .m {
+      display: flex;
+    }
+
+    .menu {
+      display: block;
+      width: 200px;
+      height: 50px;
+      background: url(./images/menu_sprite.png) no-repeat;
+      text-indent: -5000px;
+      transition: .2s;
+    }
+
+    .menu:hover {
+      background-position-y:-50px;
     }
   </style>
 </head>
+
 <body>
   <h1>
     <a href="https://www.naver.com" target="_blank">네이버</a>
   </h1>
-  <a href="#" id="up">up</a>
+  <div class="m">
+    <a href="#" class="menu">menu</a>
+    <a href="#" class="menu">menu</a>
+    <a href="#" class="menu">menu</a>
+    <a href="#" class="menu">menu</a>
+    <a href="#" class="menu">menu</a>
+  </div>
+  <!-- <a href="#" id="up">up</a> -->
 </body>
+
 </html>

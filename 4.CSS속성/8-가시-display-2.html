@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>가시속성</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  </head>
+  <body>
+    <h1>블락요소</h1>
+    <img src="images/scene1.jpg" alt="">
+    <ul>
+      <li>리스트요소</li>
+    </ul>
+    <table>
+      <tr>
+        <td>1행1열</td>
+      </tr>
+    </table>
+    <script>
+      $("h1").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("img").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("ul").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("li").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("table").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("tr").on('click', function() {
+        alert($(this).css("display"))
+      })
+      $("td").on('click', function() {
+        alert($(this).css("display"))
+      })
+    </script>
+  </body>
+</html>
