@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>display 속성</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+    }
+
+    div {
+      /* display: inline; */
+      /* display: inline-block; */
+      /* 위의 두 요소는 거의 사용하지 않는다. */
+      display: block;
+      /* float: left; */
+      width: 300px;
+      height: 200px;
+      background: #b1ffee;
+    }
+
+    body>span {
+      /* float: left; */
+      display: block;
+      width: 300px;
+      height: 200px;  
+      background: rgb(177, 211, 255);
+    }
+  </style>
+</head>
+
+<body>
+  <span>Dummy</span>
+  <div>
+    <span>Lorem ipsum dolor, sit amet consectetur adipisicing elit.</span>
+  </div>
+  <span>Dummy</span>
+</body>
+
+</html>

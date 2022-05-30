@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <title>테이블에 border 주기</title>
+  <style>
+    table {
+      /* border: 1px solid black; */
+      border-collapse: collapse;
+      /* border-collapse는 둘 중 굵은 걸로 적용 */
+      /* border-spacing과 border-collapse는 서로 반대되는 속성으로, 
+      절대 같이 쓸 수 없다*/
+      border-top: 5px solid black;
+      border-bottom: 3px solid black;
+    }
+    td {
+      border: 1px solid black;
+      width: 120px;
+      height: 80px;
+    }
+    td:first-child {
+      border-left: 0px;
+    }
+    td:last-child {
+      border-right: 0px;
+    }
+  </style>
+</head>
+<body>
+  <table>
+    <tr>
+      <td>1행1열</td>
+      <td>1행2열</td>
+    </tr>
+    <tr>
+      <td>2행1열</td>
+      <td>2행2열</td>
+    </tr>
+  </table>
+</body>
+</html>

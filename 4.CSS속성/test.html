@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    img {
+      display: none;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+  <button>이미지 보이게</button><br>
+  <img src="./images/w3c.png" alt="w3c">
+</body>
+<script>
+  $("button").on("click", () => {
+    $("img").fadeIn(1000)
+  })
+</script>
+</html>

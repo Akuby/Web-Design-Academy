@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    div {
+      height: 300px;
+      background: pink;
+      /* display : none;은 스크린리더가 읽지 않기 때문에
+        아예 의미가 없는 hr 같은 태그에만 사용한다. */
+      /* visibility : hidden;은 스크린리더마다 읽고 안읽고가 달라서
+        요즘엔 거의 쓰이지 않는다. */
+      /* 그래서 영역은 그대로 남기면서, 보이지는 않지만 스크린리더가 읽게 하려면... */
+      opacity: 0;
+      /* 이렇게 투명도를 줘버리면 된다! */
+      transition: 1s;
+    }
+    div:hover {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+  <span>Dummy</span>
+  <div>
+    <span>lorem ipsum dolor sit amet, consectetur adipiscing elit.</span>
+  </div>
+  <span>Dummy</span>
+</body>
+</html>
