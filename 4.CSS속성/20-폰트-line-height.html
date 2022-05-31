@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>줄 간격</title>
+  <style>
+    p {
+      font-family: 'Noto Sans KR';
+      line-height: 50px;
+      /* 텍스트가 한 줄일 경우, 세로 정렬은 line-height로 가능 */
+      
+    }
+    div {
+      width: 700px;
+      /* height: 300px; */
+      /* h1의 line-height는 요소 자체 높이로 들어가기 때문에 div의 height는 생략 가능 */
+      border: 1px solid #000;
+      text-align: center;
+    }
+    div h1 {
+      margin: 0;
+      /* line-height: 300px; */
+      /* 이건 한 줄일때고, 여러 줄 일땐 어떻게 하나면... */
+      width: 700px;
+      height: 300px;
+      display: table-cell;
+      background: rgb(211, 211, 255);
+      /* 이제 셀이 됐으니까, 내가 vetical-align: middle; 적용 가능 */
+      /* display : table-cell 했다고 절대 저절로 정렬 되는거 아님!! */
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae tempora inventore pariatur quasi ullam nam maiores iure totam aliquid, incidunt animi. Quia optio reiciendis vel molestias odio, enim sunt nihil.
+    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit, eius nobis? Officia sit deleniti quas voluptatem, quo, nesciunt, debitis repellendus nemo ratione facilis quod eaque aut? Amet harum quidem corrupti.
+  </p>
+  <div>
+    <h1>Lorem Ipsum is simply dummy text Lorem dolor sit amet consectetur adipisicing elit.</h1>
+  </div>
+</body>
+</html>
