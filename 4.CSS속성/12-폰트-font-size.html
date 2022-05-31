@@ -8,7 +8,7 @@
     body {
       font-size: 12px;
       margin: 0;
-      color: white;
+      color: blue;
     }
 
     h1 {
@@ -50,12 +50,12 @@
     
     section {
       background: url(./images/space.png) no-repeat center bottom / cover;
-      /* background-size 속성을 속기로 적으려면 / 와 함께 적어야하며, 앞에 position 값이 할당되어 있어야 한다. */
+      /* background-size 속성을 속기로 적으려면 / 와 함께 적어야하며, 반드시 '바로 앞에' background-position 값이 할당되어 있어야 한다. */
 
       /* 높이를 설정할 때, 100%로 하려면 조건이 까다롭다.(모든 부모가 height값을 가져야함) */
       height: 100vh;
       width: 100%;
-      /* 세로 스크롤바가 있을 땐, 100vw 보다는 그냥 100% 사용하기 */
+      /* 너비를 설정할 때, 100vw는 세로 스크롤바도 계산해버리기 때문에, 세로 스크롤바가 있을 땐, 100vw 보다는 100% 사용하기 */
     }
   </style>
 </head>
