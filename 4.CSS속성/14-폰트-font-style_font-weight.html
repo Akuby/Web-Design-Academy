@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>폰트 스타일과 굵기</title>
+  <style>
+    p {
+      font-size: 2em;
+      font-weight: 400;
+      /* weight는 개발 형태에 따라 나눠지기 때문에, 
+      다른 숫자지만 폰트 크기 단계가 같은 경우가 있다. */
+    }
+    h1 {
+      font-size: 16px;
+      font-weight: normal;
+      font-style: italic;
+    }
+    h2 {
+      /* font-style: italic;
+      font-weight: normal;
+      font-family: "Times New Roman", serif;
+      font-size: 40px; */
+
+      /* font 속기 순서 : style weight size family */
+      
+      /* 생략하면, heading 태그라도 기본값이 적용되기 때문에 bold 되지 않음 */
+      /* 또, size와 family는 생략이 불가능하다. 생략하면 아예 적용이 안된다. */
+      font: 40px "Times New Roman", serif;
+    }
+  </style>
+</head>
+<body>
+  <h1>Lorem Ipsum</h1>
+  <p>Lorem Ipsum</p>
+  <address>Lorem Ipsum</address>
+  <h2>font 속성 모두 적용</h2>
+</body>
+</html>

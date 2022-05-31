@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>테이블 태그</title>
+  <style>
+    table {
+      border-collapse: collapse;
+    }
+
+    td,
+    th {
+      border: 1px solid #000;
+      width: 100px;
+      height: 50px;
+      /* text-align: center; */
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>표 제목을 넣어주세요.</caption>
+    <thead>
+      <!--표의 머릿말 부분, 반드시 th만 올 수 있음-->
+      <tr>
+        <th>Header1</th>
+        <th>Header2</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Data1</td>
+        <td>Data1</td>
+      </tr>
+      <tr>
+        <td>Data2</td>
+        <td>Data2</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Total1</td>
+        <td>Total2</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>
+
+<!-- table -->
+<!-- thead, tbody, tfoot (각 표에서 한번만, 안적으면 저절로 tbody로 묶이기 때문에 주의!!)-->
+<!-- th, td -->

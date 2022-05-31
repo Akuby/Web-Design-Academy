@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    p {
+      background: #aabbd9;
+      text-align: center;
+      /* 얘는 넓이 내에서 텍스트를 중앙으로 */
+      /* block 요소 내의 inline 요소의 정렬 */
+      width: 500px;
+      margin: 0 auto;
+      /* 얘는 개체 자체를 중앙으로 */
+      /* block 요소 자체의 정렬 */
+      /* 다시 한번 짚어보는 margin : 0 auto; 조건 */
+      /* 1. block 요소일 것, 2. width가 100%보다 작을 것. */
+    }
+
+    div {
+      width: 100%;
+      /* border: 3px solid #000; */
+      text-align: center;
+      
+      /* text-align을 정렬하려는 텍스트 태그 자체에 주는게 아니고,
+      그 부모 태그인 block 요소에 적용해야 한다. */
+    }
+
+    span {
+      background: #c798e8;
+    }
+
+    h1 {
+      font-weight: normal;
+      width: 700px;
+      border: 1px solid #000;
+      text-align: justify;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <a href="#">링크영역</a>
+  </div>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+  <div>
+    <span>Animi adipisci voluptate unde?</span>
+  </div>
+  <h1>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum, ad? Pariatur obcaecati suscipit adipisci, asperiores ipsa nobis aperiam earum id distinctio velit, delectus enim rem alta</h1>
+</body>
+
+</html>

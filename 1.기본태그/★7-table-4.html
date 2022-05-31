@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko" dir="ltr">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    table {
+      border-collapse: collapse;
+
+    }
+
+    caption {
+      font-size: 18px;
+    }
+
+    th,
+    td {
+      border: 1px solid black;
+      width: 100px;
+      height: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <caption>☆★A와 B의 중화요리 가격비교☆★</caption>
+    <thead>
+      <!-- thead내의 th도 tr로 감싸줘야 한다! -->
+      <!-- th에 scope 속성 줘서 어느 방향을 봐야하는지 설정 -->
+      <tr>
+        <th></th>
+        <th scope="col" id="storeA">A</th>
+        <th scope="col" id="storeB">B</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row" id="menu1">짜장면</th>
+        <td headers="storeA menu1">4,000원</td>
+        <td headers="storeB menu1">5,000원</td>
+      </tr>
+      <tr>
+        <th scope="row" id="menu2">짬뽕</th>
+        <td headers="storeA menu2">4,500원</td>
+        <td headers="storeB menu2">5,500원</td>
+      </tr>
+      <tr>
+        <th scope="row" id="menu3">탕수육</th>
+        <td headers="storeA menu3">9,500원</td>
+        <td headers="storeB menu3">10,500원</td>
+      </tr>
+      <tr>
+        <th scope="row" id="menu4">우동</th>
+        <td headers="storeA menu4">5,000원</td>
+        <td headers="storeB menu4">5,500원</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <th scope="row" id="total">합계</th>
+        <!-- 하나하나 다 넣어줘야 하는.. 그런... -->
+        <td headers="storeA menu1 menu2 menu3 menu4 total">23,000원</td>
+        <td headers="storeB menu1 menu2 menu3 menu4 total">26,500원</td>
+      </tr>
+    </tfoot>
+  </table>
+</body>
+
+</html>

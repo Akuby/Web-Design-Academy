@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>특이한 속성의 vertical-align</title>
+  <style>
+    img {
+      /* vertical-align: 100px; */
+      /* top, middle, bottom(<->baseline) */
+      /* -0 ~ 0px 할당으로 텍스트 이동이 가능하긴 하다... */
+      /* 사실상 inline 요소 간의 가로배치라고 볼 수 있다. */
+      /* 이게 헷갈리기 때문에, 일단은 긴 요소를 기준으로 할당하는게 좋다 */
+    }
+
+    span {
+      vertical-align: 100px;
+      /* 이렇게 span에 주면 span 기준으로 inline이 정렬된다. */
+      /* 이 과정에서 img태그가 내려가고, 상단의 빈 공간을 채우기 위해 */
+      /* 전체 요소가 올라간다. 이 결과, 결국 img에 줬을 
+      때와 같은 모양을 보이게 되는 것 */
+    }
+
+    td {
+      border: 1px solid #000;
+      width: 300px;
+      height: 200px;
+      vertical-align: top;
+      /* table 태그에서의 vertical align은 또 다르다. */
+      /* 기본 middle 정렬인 텍스트를, 셀 상단으로 끌어올리는 역할을 한다. */
+    }
+  </style>
+</head>
+
+<body>
+  <img src="./images/scene1.jpg" alt="석양">
+  <span>gabABCD석양에 물든 풍경</span>
+  <table>
+    <tr>
+      <td>
+        1행1열
+      </td>
+    </tr>
+  </table>
+</body>
+
+</html>

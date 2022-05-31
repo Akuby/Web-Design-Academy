@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>폰트</title>
+  <style>
+    p:nth-child(2) {
+      font-variant: small-caps;
+      /* 얘도 속기로 적기 가능, 맨 앞에 적을 것 */
+    }
+    p:nth-child(3) {
+      text-transform: uppercase;
+    }
+    p:nth-child(4) {
+      text-transform: lowercase;
+    }
+    p:nth-child(5) {
+      text-transform: capitalize;
+    }
+  </style>
+</head>
+<body>
+  <p>Lorem Ipsum is simply dummy text</p>
+  <p>Lorem Ipsum is simply dummy text(small-caps)</p>
+  <p>Lorem Ipsum is simply dummy text(uppercase)<br> 
+    good when using abbreviation</p>
+  <p>Lorem Ipsum is simply dummy text(lowercase)</p>
+  <p>Lorem Ipsum is simply dummy text(capitalize)</p>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>웹폰트 적용</title>
+  <style>
+    /* chrome에서 지원하는 확장자 woff(가장 최신) ttf */
+    @import url(webfont.css);
+    /* 폰트와 관련된 모든 코드를 담아놓은 css를 import 해온다! */
+    /* 엣지, 속도 문제로  @import 보단 link 사용이 권장된다 */
+    h1 {
+      font-family: 'EliceDigitalBaeum_Bold';
+    }
+    h2 {
+      font-family: 'YUniverse-B','나눔 고딕', 'Nanum Gothic', sans-serif;
+      /* 원래 폰트 이름도 앞에 적어주면, 시스템 글꼴로 가지고 있는 사용자는 더 빨리 로드 가능 */
+    }
+  </style>
+</head>
+<body>
+  <h1>Hello, this is cheri\_</h1>
+  <h2>뮺안녕하세요. 여러 서체를 사용합니다뮺</h2>
+</body>
+</html>
