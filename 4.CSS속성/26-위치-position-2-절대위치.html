@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>position absolute</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    div {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      font-size: 24px;
+    }
+    div:nth-child(1) {
+      background-color: rgb(168, 219, 168);
+      position: absolute;
+      /* 크기는 있으나, 영역은 없다 */
+      top: 100px;
+      left: 100px;
+      /* absolute는 특별한 기준이 없을 경우, html을 기준으로 움직인다. 
+      원래 있던 위치 영역은 사라진 것으로 간주된다.*/
+    }
+
+    div:nth-child(2) {
+      background-color: rgb(228, 177, 205);
+      position: absolute;
+      right: 0;
+    }
+
+    div:nth-child(3) {
+      background-color: blanchedalmond;
+      position: absolute;
+      top: 200px;
+    }
+  </style>
+</head>
+<body>
+  <div>박스1</div>
+  <div>박스2</div>
+  <div>박스3</div>
+</body>
+</html>

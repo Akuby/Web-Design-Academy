@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    #parent {
+      width: 500px;
+      height: 500px;
+      background: #000;
+      margin: 0 auto;
+      /* position : absolute와 함께 쓸 수 없다. */
+      /* absolute이 되면 영역을 가질 수 없기 때문이다. */
+      /* 도저히 갈 수 없는 위치로 갈 때만 사용. 아무때나 쓰지 말 것. */
+      /* 특히 반응형 제작 시 정말 어쩔 수 없을 때만 사용해야 한다. */
+      position: relative;
+    }
+    #child {
+      width: 100px;
+      height: 100px;
+      background: #ffd800;
+      position: absolute;
+      /* 가장 가까운 부모 중 position 값을 가진 부모를 기준으로 움직인다. */
+      top: 400px;
+      left: 400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="parent">
+    <div id="child"></div>
+  </div>
+</body>
+</html>

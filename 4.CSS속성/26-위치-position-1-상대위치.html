@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <title>위치속성 - 상대위치</title>
+  <style>
+    div {
+      width: 100px;
+      height: 100px;
+      color: #fff;
+      font-size: 24px;
+    }
+
+    /* relative : 기준은 현재 내 위치!
+      그러나 원래 있던 영역이 보존돼버리기 때문에, 
+      밑의 요소들이 치고 올라오지 못해 잘 쓰이지 않는다.
+      z-index 값과 html 구조 순서를 잘 생각해야 한다.
+      z-index 값은 보통 html 구조가 복잡하니 그냥 100, 1000 이렇게 줘버리는듯..? */
+
+    div:nth-child(1) {
+      background-color: rgb(168, 219, 168);
+      position: relative;
+      top: 100px;
+      left: 100px;
+      z-index: 1;
+    }
+
+    div:nth-child(2) {
+      background-color: rgb(228, 177, 205);
+      position: relative;
+      top: 50px;
+      left: 50px;
+      z-index: 10;
+    }
+
+    div:nth-child(3) {
+      background-color: blanchedalmond;
+      position: relative;
+      top: -200px;
+    }
+  </style>
+</head>
+
+<body>
+  <div>박스1</div>
+  <div>박스2</div>
+  <div>박스3</div>
+</body>
+
+</html>
