@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>(주)앤씨앤</title>
+  <style>
+    /* 초기화 */
+    body {
+      overflow: hidden;
+    }
+    body, h2, p {
+      margin: 0;
+    }
+    
+    /* 섹션 */
+    section {
+      width: 100%;
+      height: 100vh;
+      background: rgb(205, 235, 255);
+    }
+    div {
+      position: fixed;
+      /* fixed 사용시, 해당 요소에 width, height 값 반드시 할당 */
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100vh;
+      background: rgb(0, 54, 90);
+      opacity: 0;
+    }
+    /* 푸터 */
+    footer {
+      position: absolute;
+      bottom: -300px;
+      left: 0;
+      width: 100%;
+      height: 300px;
+      font-size: 50px;
+      color: #fff;
+      background: #000;
+      transition: .5s;
+    }
+  </style>
+</head>
+<body>
+  <section>
+    <h2>position을 활용한 이벤트 적용하기</h2>
+  </section>
+  <div></div>
+  <footer>
+    <p>나타났다 사라지는 푸터영역</p>
+  </footer>
+</body>
+  <script>
+    const div = document.querySelector('div');
+    const footer = document.querySelector('footer');
+    window.addEventListener('wheel', (e) => {
+      if ( e.wheelDelta < 0 ) {
+        div.style.opacity = 0.5;
+        footer.style.transition = "0.5s 0.2s";
+        footer.style.bottom = 0;
+      }
+      else {
+        div.style.opacity = 0;
+        div.style.transition = "0.5s";
+        footer.style.transition = "0.5s";
+        footer.style.bottom = "-300px";
+      }
+    })
+  </script>
+</html>
