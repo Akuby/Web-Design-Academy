@@ -5,6 +5,19 @@
   <meta charset="UTF-8">
   <title>float를 활용한 레이아웃</title>
   <style>
+/*  
+    < float 영향 해지하기 >
+
+    1. float를 적용한 요소의 부모가 없을 경우, 
+    float를 마지막에 적용한 요소의 다음 형제 요소에 clear : both;를 적용
+    
+    2. float를 적용한 요소의 부모가 있을 경우,
+    - 부모요소에 높이 지정 (권장 X)
+    - 부모요소에 overflow 적용 (hidden / auto 적용)
+    - 부모요소에 ::after 가성클래스 적용
+      적용방법 예시
+        부모::after { content: "", display: block; clear: both; }
+*/
     /* 초기화 */
     body {
       margin: 0;
@@ -21,13 +34,25 @@
     #container {
       width: 800px;
       margin: 0 auto;
+      background-color: rgb(183, 121, 255);
+      /* 자식이 떠버리니, 높이를 가질 수가 없다. */
+      /* overflow: hidden; */
+      /* overflow hidden이나 auto를 주면, 강제적으로 자식의 높이를 가진다.*/
+      /* 그러나 최근엔 밑의 방법처럼 가상요소를 주는 방식을 택한다. */
     }
+
+    #container::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+    /* 가상요소를 만들면, float의 영향도 얘가 받아내기 때문에
+    block과 clear 속성을 줘서 몸빵...  */
 
     #section {
       width: 500px;
       height: 500px;
       background-color: rgb(0, 255, 0);
-      margin-right: 100px;
       float: left;
     }
 
@@ -35,7 +60,7 @@
       width: 200px;
       height: 300px;
       background-color: rgb(217, 255, 0);
-      float: left;
+      float: right;
     }
 
     #footer {
@@ -43,7 +68,6 @@
       height: 150px;
       background-color: rgb(255, 0, 212);
       margin: 0 auto;
-      clear: left;
     }
   </style>
 </head>

@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    /* 초기화 */
+    body {
+      margin: 0;
+      padding: 0;
+      color: #fff;
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    #headerWrap {
+      width: 100%;
+      height: 200px;
+      background-color: rgb(89, 145, 0);
+      position: relative;
+    }
+
+    #header {
+      width: 1000px;
+      height: 100px;
+      background-color: yellowgreen;
+      margin: 0 auto;
+      position: relative;
+      top: 100px;
+    }
+
+    #container {
+      width: 1000px;
+      margin: 0 auto;
+      padding: 50px 0;
+    }
+
+    #container::after {
+      content: "";
+      display: block;
+      clear: both;
+    }
+
+    #section1 {
+      width: 400px;
+      height: 500px;
+      background-color: bisque;
+      float: left;
+    }
+
+    #section2 {
+      width: 300px;
+      height: 500px;
+      background-color: rgb(176, 218, 255);
+      float: left ;
+      margin: 0 50px;
+    }
+
+    #aside {
+      width: 200px;
+      height: 400px;
+      background-color: rgb(207, 155, 255);
+      float: right;
+    }
+
+    #footer {
+      width: 1000px;
+      height: 150px;
+      margin: 0 auto;
+      background-color: tomato;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="headerWrap">
+    <div id="header">헤더</div>
+  </div>
+  <div id="container">
+    <div id="section1">섹션1</div>
+    <div id="section2">섹션2</div>
+    <div id="aside">사이드</div>
+  </div>
+  <div id="footer">푸터</div>
+</body>
+
+</html>
