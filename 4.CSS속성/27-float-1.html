@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>가로 흐름 지정</title>
+  <style>
+    p::first-letter {
+      font-size: 50px;
+      color: #f00;
+    }
+    img {
+      float: left;
+      /* left, right. center 없음 */
+    }
+    p:nth-child(2) {
+      float: left;
+      width: 300px;
+    }
+    p:nth-child(3) {
+      float: left;
+      width: 350px;
+    }
+    h1 {
+      clear: both;
+      background-color: pink;
+    }
+  </style>
+</head>
+<body>
+  <img src="./images/w3c.png" alt="w3c">
+  <p>1. Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+  <p>2. Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text.</p>
+  <h1>float영향 받았습니다.</h1>
+</body>
+</html>

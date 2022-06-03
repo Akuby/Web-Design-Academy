@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>신규 위치속성 - 특정위치 고정</title>
+  <style>
+    body {
+      height: 200vh;
+      margin: 0;
+    }
+    section {
+      width: 90%;
+      height: 300px;
+      border: 2px solid #000;
+      margin: 0 auto;
+    }
+    a {
+      display: block;
+      width: 100px;
+      height: 100px;
+      position: sticky;
+      top: 100px;
+      /* 일단 가만히 있다가, window 창이 위에서 100px 남았을 때부터
+        fixed 되어 움직인다. */
+      right: 50px;
+      /* float 값도 줘야한다. */
+      float: right;
+      background: rgb(255, 179, 179);
+    }
+  </style>
+</head>
+<body>
+  <section></section>
+  <a href="#">sticky</a>
+  <p>특정위치 고정</p>
+</body>
+</html>
