@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body,
+h1,
+h2,
+h3,
+p,
+ul,
+dl,
+dd {
+  /* 전체선택자를 사용하지 않는 이유는, 처리 속도 때문이다. */
+  margin: 0;
+  /* ul이 가진 padding 속성 */
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  display: none;
+}
+
+.hidden {
+  /* font-size: 0; */
+  /* 간혹 안읽힘 */
+  position: absolute;
+  left: -9999em;
+}
+
+body {
+  position: relative;
+  font-family: 'Noto Sans KR', sans-serif;
+  min-width: 1200px
+}
+
+/* 헤더 */
+#header {
+  position: absolute;
+  width: 100%;
+  height: 50px;
+  background-color: powderblue;
+}
+
+#header h1 {
+  float: left;
+}
+
+#header h1 a {
+  color: #fff;
+  font-size: 24px;
+}
+
+/* 네비 */
+#gnb {
+  float: right;
+}
+
+#gnb ul li {
+  float: left;
+  margin: 0 20px;
+  line-height: 50px;
+}
+
+#gnb ul li a {
+  color: white
+}
+
+;
