@@ -10,16 +10,16 @@
       background-color: rgb(208, 249, 255);
     }
     p:nth-child(2) {
-      /* 글자 단위로 줄바꿈해서 양쪽 정렬된 것처럼 보이게 함 */
+      /* '글자' 단위로 줄바꿈해서 양쪽 정렬된 것처럼 보이게 함 */
       word-break: break-all;
     }
     p:nth-child(3) {
-      /* 튀어나온 글자의 단어를 깨서 줄바꿈 */
+      /* 튀어나온 글자의 '단어'를 깨서 줄바꿈 */
       word-wrap: break-word;
     }
     p:nth-child(4) {
       /* 줄바꿈 없이 한 줄에 모든 텍스트 */
-      /* 신규 속성과 함께 쓰이면서 특이한 용도로 사용된다 */
+      /* 신규 속성과 함께 쓰이면서 특이한 용도로 사용된다(text-overflow : ellipsis) */
       white-space: nowrap;
     }
   </style>
