@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTf-8">
+  <title>리스트 속성</title>
+  <style>
+    body {
+      margin: 0;
+    }
+
+    ul {
+      background: #bad9d5;
+      padding: 0;
+      margin: 0;
+    }
+
+    ul li {
+      /* list-style-type: square;
+      list-style-position: inside;
+      list-style-image: url(./images/bullet.png); */
+      list-style: none;
+      border: 1px solid #000;
+      padding-left: 30px;
+      font-size: 50px;
+      background: url(./images/bullet.png) no-repeat 10px center;
+    }
+
+    ol {
+      background: pink;
+    }
+
+    ol li {
+      list-style-type: lower-alpha;
+      border: 1px solid #000;
+    }
+
+    /* 불렛기본형 : disc, circle, square */
+    /* 번호기본형 : decimal, roman, latin, alpha 등 */
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li>Lorem Ipsum</li>
+    <li>Lorem Ipsum</li>
+    <li>Lorem Ipsum</li>
+  </ul>
+  <ol>
+    <li>Lorem Ipsum</li>
+    <li>Lorem Ipsum</li>
+    <li>Lorem Ipsum</li>
+  </ol>
+</body>
+
+</html>

@@ -106,6 +106,29 @@ body {
 
 #sliderList li.slider1 {
   background: #16277a;
+  position: relative;
+}
+
+#sliderList li.slider1::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  top: 0;
+  left: 0;
+  background: url(https://devinn.dev/@resource/images/index/kivi-left.svg) no-repeat 0 0;
+}
+
+#sliderList li.slider1::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 400px;
+  height: 600px;
+  top: 0;
+  right: 0;
+  background: url(https://devinn.dev/@resource/images/index/kivi-right.svg) no-repeat 0 0;
 }
 
 #sliderList li.slider2 {
@@ -113,15 +136,25 @@ body {
 }
 
 #sliderList div {
+  position: relative;
   width: 1200px;
-  margin: 0 auto;
+  height: 300px;
+  margin: 180px auto 0;
   color: #fff;
 }
 
-#sliderList dl {
-  padding-top: 120px;
-  margin: 60px auto;
+#sliderList div img {
+  z-index: 10;
+  float: right;
+  position: relative;
+  top: -30px;
+  left: -50px;
 }
+
+#sliderList dl {
+  float: left;
+}
+
 
 #sliderList dl dt {
   font-size: 45px;
@@ -143,10 +176,10 @@ body {
 #sliderList dl dd.btn a {
   color: #fff;
   font-weight: 500;
-  font-size: 15px;
+  font-size: 18px;
   padding: 10px 30px;
   border: 1px solid white;
-  border-radius: 20px;
+  border-radius: 30px;
 }
 /* 슬라이더버튼 */
 #btnWrap {

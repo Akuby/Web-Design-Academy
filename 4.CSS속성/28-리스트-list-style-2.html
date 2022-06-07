@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <style>
+    body,
+    ul {
+      margin: 0;
+      padding: 0;
+      /* 
+      @@@내가 몰랐던 거! 꼭 복습하기!@@@
+      브라우저 크기를 줄여도, 줄바꿈이 되지 않게 하려면
+      li의 부모인 ul에 (border 포함) width값을 주어야한다. 
+      */
+    }
+
+    ul {
+      width: 800px;
+      margin: 50px auto 0;
+    }
+
+    ul li {
+      width: 200px;
+      list-style: none;
+      float: left;
+      /* 
+      line-height와 text-align만으로도 a는 li에 꽉 찬다. 
+      */
+    }
+
+    ul li a {
+      height: 50px;
+      text-decoration: none;
+      color: black;
+      display: block;
+      background-color: yellow;
+      border: 1px solid black;
+      line-height: 48px;
+      text-align: center;
+      box-sizing: border-box;
+    }
+
+    li.style a {
+      border-right: 0px;
+    }
+
+    ul li a:hover {
+      background-color: black;
+      color: white;
+      font-weight: 600;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li class="style"><a href="#">Lorem Ipsum</a></li>
+    <li class="style"><a href="#">Lorem Ipsum</a></li>
+    <li class="style"><a href="#">Lorem Ipsum</a></li>
+    <li><a href="#">Lorem Ipsum</a></li>
+  </ul>
+</body>
+
+</html>
