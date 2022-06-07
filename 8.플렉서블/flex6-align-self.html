@@ -20,27 +20,32 @@
       border: 4px solid #000;
       display: flex;
       flex-direction: row;
-      flex-wrap: wrap;
-      align-content: center;
-      /* align-content는 특성상 flex-wrap: wrap과 함께 사용
-      교차축 방향으로 나열된 요소들을 다양하게 배치
-      justify-content와 함께 사용 불가 */
+      flex-wrap: nowrap;
+      /* wrap은, 지정한 너비보다 작아지면 
+      너비 유지를 위해 요소들이 줄바꿈하여 나타난다. */
     }
 
+    /* align-self의 값 */
+    /* flex(비율), order(순서) */
     #wrap div {
-      width: 100%;
-      height: 20%;
+      height: 300px;
     }
 
     #wrap div:nth-child(1) {
+      order: 5;
+      flex: 1;
       background: red;
+      align-self: flex-end;
     }
 
     #wrap div:nth-child(2) {
+      flex: 1;
       background: green;
+      align-self: center;
     }
 
     #wrap div:nth-child(3) {
+      flex: 2;
       background: blue;
     }
   </style>
