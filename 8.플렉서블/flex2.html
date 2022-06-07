@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+    content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+  <title>플렉서블 박스</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    #wrap {
+      width: 90%;
+      height: 90vh;
+      margin: 0 auto;
+      background: #F5FFB7;
+      border: 4px solid #000;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+    }
+
+    #wrap div {
+      height: 150px;
+    }
+
+    #wrap div:nth-child(1) {
+      background: red;
+    }
+
+    #wrap div:nth-child(2) {
+      background: green;
+    }
+
+    #wrap div:nth-child(3) {
+      background: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="wrap">
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</body>
+
+</html>
