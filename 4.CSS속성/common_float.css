@@ -86,7 +86,7 @@ body {
   position: relative;
   height: 600px;
   /* 슬라이더버튼 position 값 주기 위함. */
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 #sliderList {
@@ -132,7 +132,7 @@ body {
 }
 
 #sliderList li.slider2 {
-  background: black;
+  background: black url(https://img.freepik.com/free-vector/black-memphis-background-with-lines-shapes_1017-33620.jpg?t=st=1654577222~exp=1654577822~hmac=03aebe87177c931dad1028c924ad73be6db10de6a3ad21c5727ab442a2a04dac&w=1380) no-repeat 100% 50%;
 }
 
 #sliderList div {
@@ -153,6 +153,7 @@ body {
 
 #sliderList dl {
   float: left;
+  margin-left: 30px;
 }
 
 
@@ -165,7 +166,7 @@ body {
   margin: 20px 0;
   color: rgb(197, 197, 197);
   font-weight: 300;
-  font-size: 18px;
+  font-size: 20px;
   line-height: 34px;
 }
 
