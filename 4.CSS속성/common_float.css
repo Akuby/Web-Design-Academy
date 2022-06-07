@@ -42,10 +42,19 @@ body {
 
 /* 헤더 */
 #header {
+  font-family: 'Montserrat', sans-serif;
+  margin: 15px 0;
+  padding: 0 30px;
+  box-sizing: border-box;
   position: absolute;
   width: 100%;
   height: 50px;
-  background-color: powderblue;
+  z-index: 100;
+  /* 
+  position을 가진 애들 중, 
+  뒤에 적힌 애들이 앞으로 올라오기 때문에 (맞나?)
+  header가 잠깐 안보이게 된다. 
+  */
 }
 
 #header h1 {
@@ -54,7 +63,7 @@ body {
 
 #header h1 a {
   color: #fff;
-  font-size: 24px;
+  font-size: 22px;
 }
 
 /* 네비 */
@@ -72,4 +81,129 @@ body {
   color: white
 }
 
-;
+/* 슬라이더 */
+#sliderWrap {
+  position: relative;
+  height: 600px;
+  /* 슬라이더버튼 position 값 주기 위함. */
+  overflow: hidden;
+}
+
+#sliderList {
+  width: 200%;
+}
+
+#sliderList li.slider {
+  width: 50%;
+  /* 
+  %는 값을 준 부모를 따라가기 때문에, ul에 200%를 줬다면
+  li에는 값을 다시 바꿔서 50%를 줘야한다.
+  */
+  height: 600px;
+  background: rgb(150, 150, 150);
+  float: left;
+}
+
+#sliderList li.slider1 {
+  background: #16277a;
+}
+
+#sliderList li.slider2 {
+  background: black;
+}
+
+#sliderList div {
+  width: 1200px;
+  margin: 0 auto;
+  color: #fff;
+}
+
+#sliderList dl {
+  padding-top: 120px;
+  margin: 60px auto;
+}
+
+#sliderList dl dt {
+  font-size: 45px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+#sliderList dl dd.con {
+  margin: 20px 0;
+  color: rgb(197, 197, 197);
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 34px;
+}
+
+#sliderList dl dd.btn {
+  margin: 50px 0;
+}
+
+#sliderList dl dd.btn a {
+  color: #fff;
+  font-weight: 500;
+  font-size: 15px;
+  padding: 10px 30px;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+/* 슬라이더버튼 */
+#btnWrap {
+  position: absolute;
+  bottom: 50px;
+  left: calc(50% - 54px);
+  /* 
+  absolute 주고도 중앙정렬 가능!
+  1. 왼쪽에서 50%만큼 밀어내고,
+  2. 자기 너비만큼 빼주면 중앙정렬 완성!
+  */
+}
+#btnWrap a {
+  color: #fff;
+  display: block;
+  width: 50px;
+  height: 4px;
+  background-color: gray;
+  text-indent: 100%;
+  overflow: hidden;
+  float: left;
+  margin: 0 4px;
+}
+
+#btnWrap a.on {
+  background-color: #fff;
+}
+/* 메인 */
+/* 블로그 */
+#contents_blog {
+  width: 1200px;
+  margin: 50px auto;
+  position: relative;
+}
+
+#contents_blog::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#contents_blog h2 {}
+
+#contents_blog p {}
+
+#contents_blog article {
+  width: 32%;
+  float: left;
+}
+
+#contents_blog .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* 푸터 */
+footer {
+  width: 1200px;
+  margin: 0 auto;
+}
