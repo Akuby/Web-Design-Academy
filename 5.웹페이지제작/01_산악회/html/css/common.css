@@ -1,0 +1,120 @@
+@charset "UTF-8";
+
+/* 초기화 */
+/* 초기화 코드를 그대로 따르지 말 것. outdated 된 태그도 많고, 접근성을 무시하는 경우도 있다. */
+body,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+hr {
+  display: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999em;
+  /* text-indent는 영역이 남는다... */
+}
+
+/* 웹폰트 - noto sans kr */
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  padding: 24px 9px;
+  /* margin 0 auto로 중앙 정렬할거 생각해서 padding으로 주기 */
+  background: linear-gradient(to bottom, #48aec7 0px, #fff 304px) repeat-x;
+  /* 스크롤 생성 시, 브라우저 크기만큼만 repeat 되는 배경은 repeat-x로 해결! */
+  max-width: 1300px;
+  min-width: 800px;
+  margin: 0 auto;
+}
+
+/* 메인헤더 */
+#mainHeader {
+  height: 164px;
+  background: #fff url(../images/bg_header.png) no-repeat right center;
+  border-bottom: 6px solid #030;
+  overflow: hidden;
+}
+
+#mainHeader hgroup {
+  padding: 60px 0 0 36px;
+}
+
+#mainHeader hgroup h1 {
+  font-size: 28px;
+  margin-bottom: 10px;
+}
+
+#mainHeader hgroup h2 {
+  font-size: 16px;
+}
+
+/* gnb */
+/* 1. float 사용 */
+/* #gnb {
+  height: 44px;
+}
+
+#gnb ul {
+  float: right;
+}
+
+#gnb ul li {
+  line-height: 44px;
+  float: left;
+  margin: 0 15px;
+}
+
+#gnb ul li a {} */
+
+/* 2. flex 사용 */
+#gnb {
+}
+
+#gnb ul {
+  height: 44px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+#gnb ul li {
+  margin: 0 15px;
+}
+
+#gnb ul li a {}
+
+/* 본문 */
+/* content */
+
+#content {
+  border: 1px dotted #668f7b;
+  padding: 25px 8px 22px;
+}
+
+#content header {
+  border-bottom: 1px dotted #b2b2b2;
+  padding: 0 0 10px;
+}
+
+#content article h3 {
+  margin: 25px 0;
+}

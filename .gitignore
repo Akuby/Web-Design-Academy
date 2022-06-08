@@ -1,7 +1,6 @@
 media/
 images/
 webfont/
-5.웹페이지제작/
 6.반응형/
 7.애니메이션/
 9.SVG/
@@ -9,3 +8,4 @@ webfont/
 *.png
 *.gif
 *.txt
+*.db
