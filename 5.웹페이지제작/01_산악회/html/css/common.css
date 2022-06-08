@@ -2,15 +2,7 @@
 
 /* 초기화 */
 /* 초기화 코드를 그대로 따르지 말 것. outdated 된 태그도 많고, 접근성을 무시하는 경우도 있다. */
-body,
-ul,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p {
+body,ul,h1,h2,h3,h4,h5,h6,p {
   margin: 0;
   padding: 0;
 }
