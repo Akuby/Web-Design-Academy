@@ -1,1 +1,182 @@
 @charset "UTF-8";
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ul,
+p {
+  margin: 0;
+  padding: 0;
+}
+
+ul li {
+  list-style: none;
+}
+
+hr {
+  display: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.hidden {
+  position: absolute;
+  left: -9999em;
+}
+
+/* 웹폰트 */
+@font-face {
+  font-family: 'yg-jalnan';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_four@1.2/JalnanOTF00.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  font-family: 'Noto Sans KR', sans-serif;
+  width: 800px;
+  margin: 8px auto 0;
+}
+
+/* 헤더 */
+#header {
+  height: 150px;
+  background: #f46075;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header h1 {
+  width: 185px;
+  /* h1(부모)에 먼저 넓이값을 주고, a(자식)에 100%를 줄 것! */
+}
+
+#header h1 a {
+  height: 150px;
+  display: block;
+  background: url(../images/logo.png) no-repeat;
+  text-indent: -9999em;
+}
+
+/* gnb */
+#gnb {
+  margin: 30px 80px 0 0;
+}
+
+#gnb ul {
+  display: flex;
+}
+
+#gnb ul li {
+  margin: 0 16px;
+}
+
+#gnb ul li a {
+  font-size: 17px;
+  color: #fff;
+}
+
+/* 메인 */
+main {
+  width: 564px;
+  float: left;
+}
+
+#content h2 {
+  font-family: 'yg-jalnan', sans-serif;
+  font-size: 25px;
+  line-height: 82px;
+  padding-left: 6px;
+}
+
+#content article {
+  width: 272px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  float: left;
+  margin-left: 10px;
+  margin-bottom: 10px;
+  transition-property: background-color, border;
+  transition-duration: .5s;
+}
+#content .dogHouse:hover {
+  background-color: rgb(255, 252, 214);
+  border: 1px solid orange;
+}
+#content .dogFood:hover {
+  background-color: paleturquoise;
+  border: 1px solid turquoise;
+}
+#content .dogWater:hover {
+  background-color: rgb(255, 195, 215);
+  border: 1px solid magenta;
+}
+#content .dogName:hover {
+  background-color: rgb(211, 255, 199);
+  border: 1px solid rgb(105, 175, 0);
+}
+#content article a {
+  padding: 10px;
+  display: block;
+  box-sizing: border-box;
+  height: 240px;
+  color: #000;
+}
+
+#content article:hover {
+  background-color: #fffeec;
+}
+
+#content article a h3 {
+  margin-top: 20px;
+  font-size: 15px;
+}
+
+#content article a p {
+  font-size: 12px;
+  margin-top: 20px;
+  line-height: 17px;
+}
+
+/* 어사이드 */
+#puppyPhoto {
+  width: 202px;
+  float: right;
+  margin-top: 82px;
+  border: 1px solid #006400;
+  box-sizing: border-box;
+  background: #ffc;
+  padding: 10px 0 20px;
+  text-align: center;
+}
+
+#puppyPhoto img {
+  /* 굳이 block으로 안바꿔줘도 text-align 쓰면 가능!! */
+}
+
+#puppyPhoto h2 {
+  position: absolute;
+  right: 9999em;
+}
+
+#footer {
+  clear: both;
+  /* float한 요소의 부모가 없으면, 그냥 바로 뒤의 요소에 줘도 된다. */
+  width: 800px;
+  /* 반응형 생각해서, 고정값인 height 보다는 padding을 주는게 좋다. */
+  padding: 20px 0;
+  background-color: #333333;
+  text-align: center;
+}
+
+#footer small {
+  color: #fff;
+  font-size: 9px;
+}
