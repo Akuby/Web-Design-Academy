@@ -31,32 +31,32 @@ body {
 }
 /* 헤더 */
 #header {
-  height: 275px;
-  background: url(../images/bg.png) no-repeat;
-  position: relative;
+  height: 600px;
+  background: url(../images/bg.jpg) no-repeat center / cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 #header .title {
-  position: absolute;
-  top: 140px;
-  left: 500px;
+  text-align: center;
 }
 #header .title h1 {
   margin-bottom: 30px;
 }
 #header .title h1 a{
-  font-size: 40px;
+  font-size: 58px;
   color: white;
   text-shadow: 2px 2px 2px #000;
 }
 #header .title h2 {
-  font-size: 18px;
+  font-size: 25px;
   font-weight: normal;
   color: white;
   text-shadow: 1px 1px 2px #000;
 }
 /* 네비 */
 #gnb {
-  /* height: 60px; */
+  
 }
 #gnb ul {
   display: flex;
