@@ -20,7 +20,7 @@
     <h2 class="hidden">요안도라 이용 메뉴</h2>
     <ul>
       <li><a href="#">이용 안내</a></li>
-      <li><a href="#">객실 소개</a></li>
+      <li class="on"><a href="#">객실 소개</a></li>
       <li><a href="#">예약 방법</a></li>
       <li><a href="#">예약하기</a></li>
     </ul>
@@ -50,5 +50,15 @@
     <small>Copyright &copy;. All rights reserved.</small>
   </footer>
 </body>
-
+<script>
+  const gnb = document.getElementById('gnb');
+  window.addEventListener('scroll', () => {
+    if ( window.scrollY >= 570 ) {
+      gnb.classList.add('fix');
+    }
+    else {
+      gnb.classList.remove('fix');
+    }
+  })
+</script>
 </html>
