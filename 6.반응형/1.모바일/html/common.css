@@ -1,0 +1,164 @@
+@charset "UTF-8";
+
+/* 초기화 */
+body,
+h1,
+h2,
+h3,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+address {
+  font-style: normal;
+}
+
+/* 헤더 */
+#header {
+  height: 42px;
+  background: url(../header_background.png);
+  border: 1px solid #220000;
+  position: relative;
+}
+
+#header h1 {
+  color: #fff;
+  line-height: 42px;
+  text-align: center;
+}
+
+#header a {
+  height: 32px;
+  position: absolute;
+  /* position: absolute 적용 시, display : block;이 자동으로 적용! */
+  top: 4px;
+  color: #fff;
+  text-indent: -9999em;
+  background: url(./sprites.png) no-repeat;
+}
+
+#header a.btn {
+  left: 4px;
+  width: 62px;
+}
+
+#header a.toggle {
+  right: 4px;
+  width: 32px;
+  background-position: right center;
+}
+
+#toggle {
+  padding: 20px;
+  background-color: #808080;
+}
+
+#toggle ul {
+  background-color: #fff;
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+
+#toggle ul li {
+  text-align: center;
+}
+
+#toggle ul li a {
+  display: block;
+  line-height: 30px;
+  color: #808080;
+  width: 80px;
+}
+
+#gnb {
+  background-color: #820e0e;
+  border-bottom: 2px solid #220000;
+}
+
+#gnb ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+#gnb ul li {
+  width: 25%;
+  text-align: center;
+}
+
+#gnb ul li a {
+  line-height: 35px;
+  color: #fff;
+}
+
+#lnb ul {
+  display: flex;
+  border-bottom: 1px solid #000;
+}
+
+#lnb ul li {
+  width: 20%;
+  height: 35px;
+}
+
+#lnb ul li a {
+  position: relative;
+  display: block;
+  color: #000;
+  text-align: center;
+  line-height: 35px;
+}
+
+#lnb ul li a::after {
+  content: "";
+  position: absolute;
+  top: 10px;
+  left: -1px;
+  height: 15px;
+  border-left: 1px solid #000;
+}
+
+/* 본문 */
+#content {
+  padding: 5px 9px;
+}
+
+#content header {
+  margin: 10px 5px 15px;
+}
+
+#content header time {
+  font-size: 12px;
+}
+
+#content p {
+  font-size: 12px;
+  margin: 7px 0;
+}
+
+/* 푸터 */
+#footer {
+  border-top: 3px solid #000;
+  padding: 20px 0;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+#footer address {
+  font-weight: 700;
+}
+
+#footer small {
+  font-style: italic;
+}
