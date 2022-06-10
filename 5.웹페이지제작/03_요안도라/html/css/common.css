@@ -22,17 +22,17 @@ address {
 }
 /* 공통 */
 body {
-  background-color: #b8dbf8;
+  background-color: #ffffff;
   font-family: 'Noto Sans KR', sans-serif;
 }
 .wrap {
-  width: 720px;
+  width: 1200px;
   margin: 0 auto;
 }
 /* 헤더 */
 #header {
   height: 600px;
-  background: url(../images/bg.jpg) no-repeat center / cover;
+  background: url(../images/bg.jpg) no-repeat center center / cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -56,7 +56,10 @@ body {
 }
 /* 네비 */
 #gnb {
-  
+  position: absolute;
+  top: 570px;
+  left: calc(50% - 600px);
+  z-index: 10;
 }
 #gnb ul {
   display: flex;
@@ -79,16 +82,13 @@ body {
   transition-duration: .3s;
 }
 #gnb ul li a:hover {
-  background-color: #ffdd6f;
+  background-color: #ffffff;
   color: #003366;
 }
 
 /* 메인 */
-main {
-  background-color: #fff;
-}
 #content {
-  padding: 25px 12px 0;
+  padding: 60px 12px 0;
 }
 #content h2 {
   font-size: 22px;
@@ -104,7 +104,7 @@ main {
 /* 푸터 */
 #footer {
   padding: 25px 0 15px;
-  background-color: #003300;
+  background-color: #003366;
   color: white;
   font-size: 15px;
   font-weight: 300;
