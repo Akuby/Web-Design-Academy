@@ -1,0 +1,204 @@
+@charset "UTF-8";
+/* 초기화 */
+body, h1, h2, h3, ul, p {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+ul li {
+  list-style: none;
+}
+.hidden {
+  position: absolute;
+  left: -9999em;
+}
+/* 웹폰트 */
+body {
+  width: 960px;
+  margin: 8px auto 0;
+  border: 1px solid #e7e7e7;
+  background: linear-gradient(180deg, #87ceeb, #fff 800px) no-repeat;
+  font-family: 'Nanum Gothic', sans-serif;
+}
+/* 헤더 */
+#header {
+  height: 279px;
+  background: url(../images/bg_header.png) no-repeat;
+  position: relative;
+}
+#header h1 a{
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  font-weight: 700;
+  color: yellow;
+  font-size: 80px;
+}
+/* 네비 */
+#gnb ul {
+  display: flex;
+  height: 60px;
+}
+#gnb ul li {
+  width: 25%;
+}
+#gnb ul li a {
+  display: block;
+  text-align: center;
+  line-height: 60px;
+  color: #fff;
+  font-weight: 300;
+  background-color: #006600;
+}
+#gnb ul li a:hover {
+  background-color: #fff;
+  color: #003366;
+}
+/* 메인 */
+main {
+  background-color: #fff;
+  float: left;
+  width: 740px;
+  height: 391px;
+  padding: 20px 40px 20px 10px;
+  box-sizing: border-box;
+}
+main h2 {
+  font-weight: 700;
+}
+main h3 {
+  margin: 10px 0;
+  font-weight: 700;
+}
+main p {
+  margin: 10px 0;
+  font-size: 14px;
+  line-height: 20px;
+}
+/* 어사이드 */
+#sidePhoto {
+  width: 220px;
+  height: 391px;
+  padding: 20px 0 10px;
+  box-sizing: border-box;
+  background-color: #ddffdd;
+  float: right;
+  text-align: center;
+}
+#sidePhoto img {
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+/* 푸터 */
+#footer {
+  clear: both;
+  height: 72px;
+  background-color: #061f1f;
+  color: white;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and ( min-width: 600px ) and ( max-width: 1023px ) {
+  body {
+    width: 580px;
+  }
+  main {
+    width: 580px;
+  }
+  #sidePhoto {
+    width: 580px;
+    height: 131px;
+  }
+  #sidePhoto img {
+    width: 176px;
+  }
+}
+
+@media screen and ( max-width: 599px ) {
+  body {
+    margin: 0 auto;
+    width: 320px;
+    border: none;
+    background: none;
+  }
+  #header {
+    height: 75px;
+    background: #061f1f;
+  }
+  #header h1 a{
+    font-size: 40px;
+    top: 5px;
+    left: 10px;
+  }
+  #gnb ul {
+    display: block;
+    height: 219px;
+  }
+  #gnb ul li {
+    margin: 14px auto;
+    width: 280px;
+  }
+  #gnb ul li a {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    text-align: center;
+    line-height: 41px;
+    color: #061f1f;
+    background: none;
+  }
+  #gnb ul li a:hover {
+    background-color: #fff;
+    color: #003366;
+  }
+  main {
+    width: 320px;
+    height: 500px;
+    background-color: #fff;
+    padding: 30px 10px 20px;
+  }
+  main h2 {
+    font-size: 20px;
+  }
+  main h3 {
+    font-size: 16px;
+  }
+  main p {
+    font-size: 13px;
+  }
+  #sidePhoto {
+    width: 320px;
+    height: 500px;
+    padding: 0;
+    box-sizing: border-box;
+    text-align: center;
+    background: none;
+  }
+  #sidePhoto img {
+    width: 290px;
+    height: 163px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+  }
+  #footer {
+    display: block;
+    text-align: center;
+    padding-top: 20px;
+    box-sizing: border-box;
+  }
+  #footer p {
+    text-align: center;
+    font-size: 13px;
+    margin-bottom: 18px;
+  }
+  #footer small {
+    font-size: 11px;
+    font-style: italic;
+  }
+}
