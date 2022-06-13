@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>가변영역</title>
+  <style>
+    /* @media screen and ( max-width: 1200px) { */
+      body {
+      margin: 0;
+    }
+    header {
+      background-color: rgb(173, 255, 255);
+    }
+    header .fix {
+      width: 1200px;
+      height: 200px;
+      margin: 0 auto;
+      background-color: rgb(112, 255, 255);
+    }
+    main {
+      background-color: rgb(148, 148, 255);
+    }
+    main .fix {
+      display: flex;
+      justify-content: space-evenly;
+      width: 1200px;
+      margin: 0 auto;
+      padding: 50px 0;
+      background-color: rgb(89, 89, 255);
+    }
+    main .fix section {
+      width: 30%;
+      height: 400px;
+      border: 2px solid white;
+      box-sizing: border-box;
+    }
+    footer {
+      background-color: gray;
+    }
+    footer .fix {
+      width: 1200px;
+      height: 150px;
+      margin: 0 auto;
+      background-color: rgb(87, 87, 87);
+    }
+    /* } */
+  </style>
+</head>
+<body>
+  <header>
+    <div class="fix"></div>
+  </header>
+  <main>
+    <div class="fix">
+      <section></section>
+      <section></section>
+      <section></section>
+    </div>
+  </main>
+  <footer>
+    <div class="fix"></div>
+  </footer>
+</body>
+</html>

@@ -80,7 +80,7 @@ address {
   color: #808080;
   width: 80px;
 }
-
+/* gnb */
 #gnb {
   background-color: #820e0e;
   border-bottom: 2px solid #220000;
@@ -100,7 +100,7 @@ address {
   line-height: 35px;
   color: #fff;
 }
-
+/* lnb */
 #lnb ul {
   display: flex;
   border-bottom: 1px solid #000;

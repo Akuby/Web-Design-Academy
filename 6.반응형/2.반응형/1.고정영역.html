@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>고정영역</title>
+  <style>
+    body {
+      margin: 0;
+    }
+    header {
+      background-color: rgb(173, 255, 255);
+    }
+    header .fix {
+      height: 200px;
+      margin: 0 auto;
+      width: 90%;
+      background-color: rgb(112, 255, 255);
+    }
+    main {
+      background-color: rgb(148, 148, 255);
+    }
+    main .fix {
+      width: 90%;
+      margin: 0 auto;
+      padding: 50px 0;
+      display: flex;
+      justify-content: center;
+      background-color: rgb(89, 89, 255);
+    }
+    main .fix section {
+      height: 400px;
+      width: 30%;
+      border: 1px solid white;
+      margin: 0 20px;
+    }
+    footer {
+      background-color: gray;
+    }
+    footer .fix {
+      width: 90%;
+      height: 150px;
+      margin: 0 auto;
+      background-color: rgb(87, 87, 87);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="fix"></div>
+  </header>
+  <main>
+    <div class="fix">
+      <section></section>
+      <section></section>
+      <section></section>
+    </div>
+  </main>
+  <footer>
+    <div class="fix"></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>반응형</title>
+  <style>
+    /* 미디어쿼리 */
+    body, h1, p {
+      margin: 0;
+    }
+    div {
+      width: 1200px;
+      margin: 0 auto;
+      border: 2px solid #000;
+      box-sizing: border-box;
+      text-align: center;
+      background-color: azure;
+    }
+    h1 {
+      margin: 20px 0;
+    }
+    p {
+      margin-bottom: 20px;
+    }
+    /* 모바일 우선주의가 유행하지만, 아직 한국에선 데스크탑 우선주의 */
+    @media screen and ( max-width: 1200px ) and ( min-width: 600px ) {
+      div {
+        width: 100%;
+        margin: 0;
+        background-color: aqua;
+        border: none;
+      }
+    }
+    @media screen and ( max-width: 599px ) {
+      div {
+        background-color: greenyellow;
+      }
+      img {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <h1>반응형이란</h1>
+    <p>하나의 웹사이트에서 PC, 스마트폰, 태블릿 PC 등 접속하는 디스플레이의 종류에 따라 화면의 크기가 자동으로 변하도록 만든 웹페이지 접근 기법을 말한다.</p>
+    <p>Responsive Web Design이라고 하며, 줄여서 RWD라고도 한다</p>
+    <img src="./station.jpg" alt="스테이션">
+  </div>
+</body>
+</html>
