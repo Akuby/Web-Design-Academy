@@ -144,6 +144,7 @@ a {
   }
   #content {
     flex-wrap: wrap;
+    justify-content: space-evenly;
   }
   #content section {
     width: 45%;
