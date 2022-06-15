@@ -1,0 +1,31 @@
+@charset "utf-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+#wrap {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  border: 10px solid #000;
+}
+
+#wrap>div {
+  width: 32%;
+  height: 45vh;
+  border: 1px solid #f00;
+}
+
+#wrap > div:nth-child(4n) {
+  width: 48.5%;
+}
+#wrap > div:nth-child(5n) {
+  width: 48.5%;
+}
