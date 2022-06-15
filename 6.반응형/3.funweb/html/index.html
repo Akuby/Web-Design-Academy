@@ -3,23 +3,23 @@
 
 <head>
   <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/common.css">
   <title>FunWeb | World's Best Solution Company</title>
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <h1><a href="#">funweb</a></h1>
-    <nav>
-      <h2>membership navigation</h2>
+    <nav id="mnb">
+      <h2 class="hidden">membership navigation</h2>
       <ul>
-        <li><a href="#">Login</a></li>
-        <li><a href="#">Join</a></li>
+        <li class="goLogin"><a href="#">login</a></li>
+        <li class="goJoin"><a href="#">Join</a></li>
       </ul>
     </nav>
-    <nav>
-      <h2>funweb main menu</h2>
+    <nav id="gnb">
+      <h2 class="hidden">funweb main menu</h2>
       <ul>
         <li><a href="#">Home</a></li>
         <li><a href="#">Company</a></li>
@@ -29,73 +29,87 @@
       </ul>
     </nav>
   </header>
+  <hr>
   <main>
-    <section>
-      <h2>Our job is to make you look good</h2>
-      <a href="#">Contact us</a>
+    <section id="slogan">
+      <h2 class="hidden">Slogan</h2>
+      <p>Our job is to make <br>you look good</p>
+      <a href="#">Contact Us</a>
     </section>
-    <section>
-      <h2>Solutions</h2>
-      <article>
-        <a href="#">
-          <img src="" alt="">
-          <h3>Web Hosting Solution</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc urna, fringilla non fringilla ut,
-            lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat.
-            Curabitur
-            ac sodales ante. Ut vel est </p>
-        </a>
-      </article>
-      <article>
-        <a href="#">
-          <img src="" alt="">
-          <h3>Web Security Solution</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc urna, fringilla non fringilla ut,
-            lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat.
-            Curabitur
-            ac sodales ante. Ut vel est </p>
-        </a>
-      </article>
-      <article>
-        <a href="#">
-          <img src="" alt="">
-          <h3>Web payment Solution</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur nunc urna, fringilla non fringilla ut,
-            lacinia eu urna. Aliquam nec urna at nisi pulvinar eleifend. Duis commodo luctus leo vitae feugiat.
-            Curabitur
-            ac sodales ante. Ut vel est </p>
-        </a>
-      </article>
+    <section id="solution">
+      <div id="solutionWrap">
+        <h2 class="hidden">Solutions</h2>
+        <article class="hosting solution">
+          <a href="#">
+            <h3>Web Hosting Solution</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </a>
+        </article>
+        <article class="security solution">
+          <a href="#">
+            <h3>Web Security Solution</h3>
+            <p>Lorem ipsum dolor sit amet</p>
+          </a>
+        </article>
+        <article class="payment solution">
+          <a href="#">
+            <h3>Web payment Solution</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </a>
+        </article>
+      </div>
     </section>
-    <section>
-      <h2>Customer Center</h2>
-      <section>
+    <section id="customerBoard">
+      <h2 class="hidden">Customer Center</h2>
+      <section id="securityNews">
         <h3><span>Security</span> News</h3>
-        <dl>
-          <dt>Vivamus id ligula velit, quis euismod nisi</dt>
-          <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim. Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus, </dd>
-          <dt>Vivamus id ligula velit, quis euismod nisi</dt>
-          <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim. Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus,  </dd>
-        </dl>
+        <a href="#">
+          <dl>
+            <!-- dl 안에는 dt와 dd만 들어갈 수 있다. 그러므로, a태그로 dt와 dd를 묶을 수 없다.-->
+            <!-- 그래서 같은 게시글에 한번에 링크를 주려면, a로 dl을 감싸서 여러개를 배치할 수 있다. -->
+            <dt>Vivamus id ligula velit, quis euismod nisi</dt>
+            <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim.
+              Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus,
+            </dd>
+          </dl>
+        </a>
+        <a href="#">
+          <dl>
+            <dt>Vivamus id ligula velit, quis euismod nisi</dt>
+            <dd>Proin quis ante eget arcu tempus tempus porta vel ipsum. Quisque vitae nulla vel lorem cursus dignissim.
+              Sed sit amet metus tortor. In hac habitasse platea dictumst. Aliquam erat volutpat. Aliquam massa risus,
+            </dd>
+          </dl>
+        </a>
       </section>
-      <section>
-        <h3>News & Notice</h3>
+      <section id="newsNotice">
+        <h3>News &amp; Notice</h3>
+        <!-- table태그로 마크업 할 수도 있다 -->
         <ul>
-          <li><a href="#">Vivamus id ligula velit, quis euismod nisi</a></li>
-          <li><a href="#">Fusce eros augue, tempus nec interdum eu</a></li>
-          <li><a href="#">Donec eget tincidunt purus</a></li>
-          <li><a href="#">Nam facilisis mauris in dui suscipit volutpat </a></li>
-          <li><a href="#">Aenean in dui mollis leo ullamcorper fringilla </a></li>
+          <li><a href="#">Vivamus id ligula velit, quis euismod nisi</a><span>2020.12.31</span></li>
+          <li><a href="#">Fusce eros augue, tempus nec interdum eu</a><span>2020.12.31</span></li>
+          <li><a href="#">Donec eget tincidunt purus</a><span>2020.12.31</span></li>
+          <li><a href="#">Nam facilisis mauris in dui suscipit volutpat </a><span>2020.12.31</span></li>
+          <li><a href="#">Aenean in dui mollis leo ullamcorper fringilla </a><span>2020.12.31</span></li>
         </ul>
       </section>
     </section>
   </main>
-  <footer>
-    <small>All contents Copyright 2011 FunWeb Inc. all rights reserved</small>
-    <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321 </address>
-    <a href="#">facebook</a>
-    <a href="#">tweeter</a>
-  </footer>
+  <hr>
+  <!-- 왜 div로 감싸주냐면.. -->
+  <!-- footer 상단의 화면을 꽉 채우는 선을 넣기 위해서! -->
+  <div id="footerWrap">
+    <footer id="footer">
+      <div class="info">
+        <small>All contents Copyright 2011 FunWeb Inc. all rights reserved</small>
+        <address>Contact mail : funweb@funwebbiz.com Tel: +82 64 123 4315 Fax +82 64 123 4321 </address>
+      </div>
+      <ul class="sns">
+        <li class="facebook"><a href="#">go to facebook</a></li>
+        <li class="twitter"><a href="#">go to twitter</a></li>
+      </ul>
+    </footer>
+  </div>
 </body>
 
 </html>

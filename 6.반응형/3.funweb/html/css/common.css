@@ -1,0 +1,147 @@
+@charset "UTF-8";
+/* 초기화 */
+body, h1, h2, h3, ul, p, dl, dd {
+  margin: 0;
+  padding: 0;
+}
+hr {
+  display: none;
+}
+ul li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+address {
+  font-style: normal;
+}
+.hidden {
+  position: absolute;
+  left: -9999em;
+}
+/* 웹폰트 segoe */
+@font-face {
+  font-family: segoe;
+  src: 
+  url(../font/segoeui.eot), 
+  url(../font/segoeui.ttf), 
+  url(../font/segoeui.woff);
+}
+body {
+  font-family: 'segoe', sans-serif;
+  min-width: 1200px;
+  /* position: absolute 요소들의 기준점을 만들기 위함 */
+  position: relative;
+}
+/* 헤더 */
+#header {
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#header h1 {
+  position: absolute;
+  top: 25px;
+  left: 20px;
+}
+#header h1 a{
+  display: block;
+  width: 249px;
+  height: 51px;
+  background: url(../image/logo.png) no-repeat;
+  text-indent: -9999em;
+}
+#mnb {
+  position: absolute;
+  top: 25px;
+  right: 30px;
+}
+#mnb ul{
+  display: flex;
+}
+#mnb ul li {
+  position: relative;
+}
+#mnb ul li a {
+  font-size: 12px;
+  line-height: 51px;
+  padding: 5px 12px;
+  color: #333;
+}
+#mnb .goLogin::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  right: 0px;
+  height: 11px;
+  border-left: 1px solid #bea082;
+}
+#mnb .goJoin::before {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 0px;
+  height: 11px;
+  border-left: 1px solid #82a0be;
+}
+#gnb ul{
+  display: flex;
+  padding-left: 80px;
+}
+#gnb ul li {
+  margin: 0 5px;
+}
+#gnb ul li a {
+  text-transform: uppercase;
+  padding: 0 10px;
+}
+#gnb ul li a:hover {
+  border-bottom: 3px solid #00bff3;
+  padding-bottom: 10px;
+}
+/* 메인 */
+#slogan {
+  width: 100%;
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 를 background에 줘도 된다.*/
+  background: url(../image/bg.jpg) no-repeat top -100px center / cover;
+  box-sizing: border-box;
+  position: relative;
+}
+#slogan::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.7);
+}
+#slogan p {
+  color: #fff;
+  font-size: 55px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-shadow: 1px 3px 2px #000;
+  line-height: 65px;
+  letter-spacing: 2px;
+  position: relative;
+}
+#slogan a {
+  display: block;
+  width: 156px;
+  background-color: #ef464c;
+  line-height: 40px;
+  color: white;
+  margin-top: 50px;
+  position: relative;
+}
+/* 푸터 */
