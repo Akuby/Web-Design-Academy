@@ -1,40 +1,60 @@
 @charset "UTF-8";
+
 /* 초기화 */
-body, h1, h2, h3, ul, p, dl, dd {
+body,
+h1,
+h2,
+h3,
+ul,
+p,
+dl,
+dd {
   margin: 0;
   padding: 0;
 }
+
 hr {
   display: none;
 }
+
 ul li {
   list-style: none;
 }
+
 a {
   text-decoration: none;
   color: #000;
 }
+
+small {
+  font-size: inherit;
+}
+
 address {
   font-style: normal;
 }
+
 .hidden {
   position: absolute;
   left: -9999em;
 }
+
 /* 웹폰트 segoe */
 @font-face {
   font-family: segoe;
-  src: 
-  url(../font/segoeui.eot), 
-  url(../font/segoeui.ttf), 
-  url(../font/segoeui.woff);
+  src:
+    url(../font/segoeui.eot),
+    url(../font/segoeui.ttf),
+    url(../font/segoeui.woff);
 }
+
 body {
   font-family: 'segoe', sans-serif;
   min-width: 1200px;
   /* position: absolute 요소들의 기준점을 만들기 위함 */
   position: relative;
 }
+
 /* 헤더 */
 #header {
   height: 100px;
@@ -42,35 +62,42 @@ body {
   justify-content: center;
   align-items: center;
 }
+
 #header h1 {
   position: absolute;
   top: 25px;
   left: 20px;
 }
-#header h1 a{
+
+#header h1 a {
   display: block;
   width: 249px;
   height: 51px;
   background: url(../image/logo.png) no-repeat;
   text-indent: -9999em;
 }
+
 #mnb {
   position: absolute;
   top: 25px;
   right: 30px;
 }
-#mnb ul{
+
+#mnb ul {
   display: flex;
 }
+
 #mnb ul li {
   position: relative;
 }
+
 #mnb ul li a {
   font-size: 12px;
   line-height: 51px;
   padding: 5px 12px;
   color: #333;
 }
+
 #mnb .goLogin::after {
   content: "";
   position: absolute;
@@ -79,6 +106,7 @@ body {
   height: 11px;
   border-left: 1px solid #bea082;
 }
+
 #mnb .goJoin::before {
   content: "";
   position: absolute;
@@ -87,21 +115,26 @@ body {
   height: 11px;
   border-left: 1px solid #82a0be;
 }
-#gnb ul{
+
+#gnb ul {
   display: flex;
   padding-left: 80px;
 }
+
 #gnb ul li {
   margin: 0 5px;
 }
+
 #gnb ul li a {
   text-transform: uppercase;
   padding: 0 10px;
 }
+
 #gnb ul li a:hover {
   border-bottom: 3px solid #00bff3;
   padding-bottom: 10px;
 }
+
 /* 메인 */
 #slogan {
   width: 100%;
@@ -116,6 +149,7 @@ body {
   box-sizing: border-box;
   position: relative;
 }
+
 #slogan::before {
   content: "";
   position: absolute;
@@ -123,8 +157,9 @@ body {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0,0,0,0.7);
+  background-color: rgba(0, 0, 0, 0.7);
 }
+
 #slogan p {
   color: #fff;
   font-size: 55px;
@@ -135,6 +170,7 @@ body {
   letter-spacing: 2px;
   position: relative;
 }
+
 #slogan a {
   display: block;
   width: 156px;
@@ -144,4 +180,171 @@ body {
   margin-top: 50px;
   position: relative;
 }
+
+#solution {
+  background: #ebebeb;
+  /* 패딩으로 하든지 */
+}
+
+#solutionWrap {
+  width: 1200px;
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 80px 0;
+}
+
+#solution .solution {
+  text-align: center;
+  flex: 1;
+}
+
+#solution .solution::before {
+  content: "";
+  display: block;
+  width: 90px;
+  height: 80px;
+  margin: 0 auto;
+}
+
+#solution .hosting::before {
+  background: url(../image/bgSolution.png) no-repeat top 0px left 0px;
+}
+
+#solution .security::before {
+  background: url(../image/bgSolution.png) no-repeat top 0px left -100px;
+}
+
+#solution .payment::before {
+  background: url(../image/bgSolution.png) no-repeat top 0px left -205px;
+}
+
+/* customer */
+#customerBoard {
+  display: flex;
+  justify-content: space-evenly;
+  width: 1200px;
+  margin: 60px auto 70px;
+}
+
+#customerBoard>section {
+  width: 45%;
+  position: relative;
+}
+
+#customerBoard>section h3 {
+  font-size: 24px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+  text-indent: 6px;
+}
+
+#customerBoard>section .more {
+  position: absolute;
+  top: 0;
+  right: 0;
+  text-indent: -999em;
+  transition: .2s;
+  /* display: block;
+  width: 30px;
+  height: 30px;
+  overflow: hidden; */
+}
+
+#customerBoard>section .more::before {
+  content: "";
+  position: absolute;
+  left: -21px;
+  top: 0px;
+  width: 30px;
+  height: 30px;
+  border-left: 2px solid #ccc;
+}
+
+#customerBoard>section .more::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  top: 14px;
+  right: 5px;
+  border-top: 2px solid #ccc;
+}
+#customerBoard>section .more:hover {
+  transform: rotate(45deg);
+}
+
+/* security news */
+#securityNews dl {
+  padding: 22px 12px 15px;
+  color: #818181;
+}
+
+#securityNews dl dt {
+  font-size: 19px;
+  font-weight: 700;
+  margin-bottom: 25px;
+  color: #333;
+}
+
+#securityNews a dl dd {
+  line-height: 25px;
+}
+
+/* news notice */
+#newsNotice ul li {
+  padding: 25px 10px;
+  border-bottom: 1px solid #e7eced;
+}
+
+#newsNotice ul li a {
+  display: block;
+  padding-bottom: 10px;
+  color: #333;
+  font-size: 18px;
+  font-weight: 700;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+#newsNotice ul li span {
+  font-size: 15px;
+  color: #818181;
+}
+
 /* 푸터 */
+#footer {
+  border-top: 1px solid #a0a0a0;
+
+}
+#footerWrap {
+  width: 1200px;
+  padding: 22px 0;
+  margin: 0 auto;
+  background: url(../image/logoFooter.png) no-repeat center left 25px;
+  display: flex;
+  justify-content: space-between;
+}
+#footer .info {
+  margin-left: 220px;
+  font-size: 13px;
+}
+#footer .sns {
+  display: flex;
+  margin-right: 25px;
+}
+#footer .sns li a{
+  display: block;
+  width: 33px;
+  height: 33px;
+  text-indent: -999em;
+}
+#footer .facebook a {
+  background: url(../image/bgSns.png) no-repeat;
+}
+#footer .twitter a {
+  margin-left: 15px;
+  background: url(../image/bgSns.png) no-repeat top 0px left -50px;
+}
