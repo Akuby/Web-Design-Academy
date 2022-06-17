@@ -50,13 +50,14 @@ address {
 
 body {
   font-family: 'segoe', sans-serif;
-  min-width: 1200px;
+  /* min-width: 1200px; */
   /* position: absolute 요소들의 기준점을 만들기 위함 */
   position: relative;
 }
 
 /* 헤더 */
 #header {
+  width: 100%;
   height: 100px;
   display: flex;
   justify-content: center;
@@ -137,17 +138,16 @@ body {
 
 /* 메인 */
 #slogan {
-  width: 100%;
-  height: 600px;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  height: 600px;
   text-align: center;
   /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 를 background에 줘도 된다.*/
   background: url(../image/bg.jpg) no-repeat top -100px center / cover;
-  box-sizing: border-box;
-  position: relative;
 }
 
 #slogan::before {
@@ -161,41 +161,39 @@ body {
 }
 
 #slogan p {
+  position: relative;
+  margin-bottom: 50px;
   color: #fff;
   font-size: 55px;
   font-weight: bold;
   text-transform: uppercase;
   text-shadow: 1px 3px 2px #000;
-  line-height: 65px;
-  letter-spacing: 2px;
-  position: relative;
 }
 
 #slogan a {
+  position: relative;
   display: block;
   width: 156px;
-  background-color: #ef464c;
   line-height: 40px;
+  background-color: #ef464c;
   color: white;
-  margin-top: 50px;
-  position: relative;
 }
 
 #solution {
   background: #ebebeb;
+  
   /* 패딩으로 하든지 */
 }
 
 #solutionWrap {
-  width: 1200px;
   display: flex;
-  justify-content: center;
+  width: 1200px;
   margin: 0 auto;
   padding: 80px 0;
 }
 
 #solution .solution {
-  text-align: center;
+  padding: 0 10px;
   flex: 1;
 }
 
@@ -205,20 +203,24 @@ body {
   width: 90px;
   height: 80px;
   margin: 0 auto;
-}
-
-#solution .hosting::before {
-  background: url(../image/bgSolution.png) no-repeat top 0px left 0px;
+  background: url(../image/bgSolution.png) no-repeat;
 }
 
 #solution .security::before {
-  background: url(../image/bgSolution.png) no-repeat top 0px left -100px;
+  background-position-x: center;
 }
 
 #solution .payment::before {
-  background: url(../image/bgSolution.png) no-repeat top 0px left -205px;
+  background-position-x: right;
+}
+#solution .solution h3 {
+  text-align: center;
 }
 
+#solution .solution a {
+  color: #333;
+  text-align: center;
+}
 /* customer */
 #customerBoard {
   display: flex;
@@ -244,38 +246,37 @@ body {
   position: absolute;
   top: 0;
   right: 0;
-  text-indent: -999em;
-  transition: .2s;
-  /* display: block;
   width: 30px;
   height: 30px;
-  overflow: hidden; */
+  text-indent: -9999px;
+  transition: 0.2s;
 }
 
 #customerBoard>section .more::before {
   content: "";
   position: absolute;
-  left: -21px;
-  top: 0px;
+  top: 50%;
+  right: -15px;
   width: 30px;
-  height: 30px;
-  border-left: 2px solid #ccc;
+  border-bottom: 2px solid #ccc;
 }
 
 #customerBoard>section .more::after {
   content: "";
   position: absolute;
-  width: 30px;
+  top: 0;
+  right: 0;
   height: 30px;
-  top: 14px;
-  right: 5px;
-  border-top: 2px solid #ccc;
+  border-left: 2px solid #ccc;
 }
 #customerBoard>section .more:hover {
   transform: rotate(45deg);
 }
 
 /* security news */
+#securityNews h3 span {
+  color: #f67b60;
+}
 #securityNews dl {
   padding: 22px 12px 15px;
   color: #818181;
@@ -300,13 +301,13 @@ body {
 
 #newsNotice ul li a {
   display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding-bottom: 10px;
   color: #333;
   font-size: 18px;
   font-weight: 700;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 #newsNotice ul li span {
@@ -320,31 +321,51 @@ body {
 
 }
 #footerWrap {
-  width: 1200px;
-  padding: 22px 0;
-  margin: 0 auto;
-  background: url(../image/logoFooter.png) no-repeat center left 25px;
   display: flex;
   justify-content: space-between;
+  padding: 23px 80px 30px 200px;
+  box-sizing: border-box;
+  background: url(../image/logoFooter.png) no-repeat center left 25px;
 }
-#footer .info {
-  margin-left: 220px;
-  font-size: 13px;
-}
+
 #footer .sns {
   display: flex;
-  margin-right: 25px;
+}
+#footer .sns li {
+  width: 33px;
+  margin-left: 17px;
 }
 #footer .sns li a{
   display: block;
   width: 33px;
   height: 33px;
   text-indent: -999em;
-}
-#footer .facebook a {
   background: url(../image/bgSns.png) no-repeat;
 }
-#footer .twitter a {
-  margin-left: 15px;
-  background: url(../image/bgSns.png) no-repeat top 0px left -50px;
+#footer .sns .twitter a {
+  background-position-x: right;
+}
+/* 미디어쿼리 */
+@media screen and ( max-width: 1200px ) {
+  #slogan {
+    width: 100%;
+    height: 50vw;
+    background: url(../image/bg.jpg) no-repeat top -100px center / cover;
+  }
+  #slogan::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+  }
+  
+  #solutionWrap {
+    width: 100%;
+  }
+  #customerBoard {
+    width: 100%;
+  }
 }
