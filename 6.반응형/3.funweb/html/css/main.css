@@ -120,7 +120,7 @@
   content: "";
   position: absolute;
   top: 50%;
-  right: -15px;
+  right: 5px;
   width: 30px;
   border-bottom: 2px solid #ccc;
 }
@@ -129,12 +129,9 @@
   content: "";
   position: absolute;
   top: 0;
-  right: 0;
+  right: 20px;
   height: 30px;
   border-left: 2px solid #ccc;
-}
-#customerBoard>section .more:hover {
-  transform: rotate(45deg);
 }
 
 /* security news */
