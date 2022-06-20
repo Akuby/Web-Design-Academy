@@ -8,7 +8,12 @@ h3,
 ul,
 p,
 dl,
-dd {
+dd,
+figure,
+th,
+td,
+fieldset,
+input {
   margin: 0;
   padding: 0;
 }
@@ -24,6 +29,14 @@ ul li {
 a {
   text-decoration: none;
   color: #000;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+fieldset {
+  border: 0;
 }
 
 small {
