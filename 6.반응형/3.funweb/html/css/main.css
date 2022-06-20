@@ -45,7 +45,7 @@
 
 #solution {
   background: #ebebeb;
-  
+
   /* 패딩으로 하든지 */
 }
 
@@ -77,6 +77,7 @@
 #solution .payment::before {
   background-position-x: right;
 }
+
 #solution .solution h3 {
   text-align: center;
 }
@@ -85,6 +86,7 @@
   color: #333;
   text-align: center;
 }
+
 /* customer */
 #customerBoard {
   display: flex;
@@ -138,6 +140,7 @@
 #securityNews h3 span {
   color: #f67b60;
 }
+
 #securityNews dl {
   padding: 22px 12px 15px;
   color: #818181;
@@ -177,25 +180,38 @@
 }
 
 /* 미디어쿼리 */
-@media screen and ( max-width: 1200px ) {
+@media screen and (max-width: 1200px) and (min-width: 800px) {
+  body {
+    width: 100%;
+  }
+
   #slogan {
-    width: 100%;
-    background: url(../image/bg.jpg) no-repeat top -100px center / cover;
+    height: 50vw;
+    background: url(../image/bg.jpg) no-repeat top center / cover;
   }
-  #slogan::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
+
+  #slogan p {
+    margin-bottom: 50px;
+    font-size: 4.5vw;
   }
-  
+
+  #slogan a {
+    width: 13vw;
+  }
+
   #solutionWrap {
+    display: flex;
     width: 100%;
+    margin: 0 auto;
+    padding: 80px 0;
   }
+
+  #solutionWrap>article {
+    margin-top: 50px;
+  }
+
   #customerBoard {
     width: 100%;
   }
+
 }
