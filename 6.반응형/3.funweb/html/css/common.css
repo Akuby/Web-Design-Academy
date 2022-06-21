@@ -219,10 +219,4 @@ body {
     position: initial;
     order: 1;
   }
-  #footer {
-    border-top: 1px solid #a0a0a0;
-  }
-  #footerWrap small {
-    font-size: 1.4vw;
-  }
 }
