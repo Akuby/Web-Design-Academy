@@ -152,7 +152,6 @@ body {
 /* 푸터 */
 #footer {
   border-top: 1px solid #a0a0a0;
-
 }
 
 #footerWrap {
@@ -218,5 +217,9 @@ body {
   #mnb {
     position: initial;
     order: 1;
+  }
+  #footer {
+    border-top: 1px solid #a0a0a0;
+    font-size: 1em;
   }
 }
