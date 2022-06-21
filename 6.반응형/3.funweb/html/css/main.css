@@ -11,7 +11,7 @@
   height: 600px;
   text-align: center;
   /* linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), 를 background에 줘도 된다.*/
-  background: url(../image/bg.jpg) no-repeat top -100px center / cover;
+  background: url(../image/bg.jpg) no-repeat top center / cover;
 }
 
 #slogan::before {
