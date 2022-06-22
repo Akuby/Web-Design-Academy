@@ -12,7 +12,25 @@
             width: 10px; height: 50px;
             background-color: orange;
             margin: 5px;
-            transition-duration: 1s;
+            transition-duration: 5s;
+        }
+        #graph:hover .bar {
+          width: 600px;
+        }
+        .bar:nth-child(1) {
+          transition-timing-function: linear;
+        }
+        .bar:nth-child(2) {
+          transition-timing-function: ease-in;
+        }
+        .bar:nth-child(3) {
+          transition-timing-function: ease-out;
+        }
+        .bar:nth-child(4) {
+          transition-timing-function: ease;
+        }
+        .bar:nth-child(5) {
+          transition-timing-function: ease-in-out;
         }
     </style>
 </head>

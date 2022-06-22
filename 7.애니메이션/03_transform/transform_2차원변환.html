@@ -3,16 +3,17 @@
 <head>
     <meta charset="utf-8" />
     <title></title>
-    <script src="prefixfree.min.js"></script>
     <style>
-        section { width: 100px; height: 100px; border: 5px solid #000; margin:50px;  }
-        div { width: 100px; height: 100px; background: #ff0000; }
+        section { width: 100px; height: 100px; border: 5px solid #000; margin:50px; perspective: 500px;}
+        div { width: 100px; height: 100px; background: #ff0000; transition: 1s; transform-origin: 0px 0px;}
 
         /* 변환함수 적용하기 */
-        section:nth-child(1):hover div { }
-        section:nth-child(2):hover div { }
-        section:nth-child(3):hover div { }
-        section:nth-child(4):hover div { }
+        section:nth-child(1):hover div { transform: rotate(45deg) scale(1.5, 0.5); }
+        section:nth-child(2):hover div { transform: scale(1.5, 0.5) rotate(45deg);}
+        section:nth-child(3):hover div { transform: translateX(50px) translateY(50px); }
+        section:nth-child(4):hover div { transform: skewX(20deg); }
+        section:nth-child(5):hover div { transform: rotateX(90deg); }
+        section:nth-child(6):hover div { transform: translateZ(200px); }
     </style>
 </head>
 <body>
@@ -28,5 +29,11 @@
     <section>
         <div></div>
     </section>
+    <section>
+      <div></div>
+  </section>
+  <section>
+    <div></div>
+</section>
 </body>
 </html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    div {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 100px;
+      left: calc(50% - 100px);
+      animation-name: bounce;
+      animation-duration: 0.5s;
+      animation-timing-function: ease-in;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    span {
+      width: 500px;
+      border-bottom: 1px solid #000;
+      position: absolute;
+      top: 600px;
+      left: calc(50% - (500px/2));
+    }
+    @keyframes bounce {
+      0% {top: 100px;}
+      100% {top: 400px;}
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <span></span>
+</body>
+</html>

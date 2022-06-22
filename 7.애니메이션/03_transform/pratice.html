@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    section {
+      position: relative;
+      top: 100px;
+      left: calc(50% - 100px);
+      width: 200px;
+      height: 200px;
+      animation: shapeMove 15s infinite linear;
+      transform-style: preserve-3d;
+    }
+
+    div {
+      width: 200px;
+      height: 200px;
+      position: absolute;
+      left: 0;
+      top: 0;
+      opacity: 0.8;
+      font-size: 50px;
+      color: white;
+    }
+    div:nth-child(1) {
+      background: rgb(255, 173, 173);
+    }
+    div:nth-child(2) {
+      background: rgb(176, 176, 255);
+      transform: rotateY(45deg);
+    }
+    div:nth-child(3) {
+      background: rgb(168, 168, 168);
+      transform: rotateY(90deg);
+    }
+    div:nth-child(4) {
+      background: rgb(178, 255, 167);
+      transform: rotateY(135deg);
+    }
+    @keyframes shapeMove {
+      from {
+        transform:  rotateX(-20deg) rotateY(0deg);
+      }
+
+      to {
+        transform:  rotateX(-20deg) rotateY(360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+</section>
+</body>
+</html>
