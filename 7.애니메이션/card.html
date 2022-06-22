@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>카드 이펙트</title>
+  <style>
+    body {
+      perspective: 500px;
+      display: flex;
+      justify-content: flex-end;
+    }
+    #card {
+      width: 200px;
+      height: 300px;
+      position: relative;
+      transform-style: preserve-3d;
+      transition: 1s;
+    }
+    #card:hover {
+      transform: rotateY(90deg);
+      /* 90도를 줬는데도 면이 보이는 이유는 perpective 때문 */
+    }
+    #card > div {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+      font-size: 50px;
+      opacity: 0.5;
+      backface-visibility: hidden;
+    }
+    #card .front {
+      background-color: red;
+      color: pink;
+      transform: rotateY(0deg);
+    }
+    #card .back {
+      background-color: blue;
+      color: powderblue;
+      transform: rotateY(180deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div id="card">
+    <div class="front">앞면</div>
+    <div class="back">뒷면</div>
+  </div>
+</body>
+
+</html>

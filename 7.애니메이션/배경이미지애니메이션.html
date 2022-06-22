@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      margin: 0;
+      display: flex;
+    }
+
+    .slider {
+      width: 200px;
+      height: 200px;
+      margin: 20px 5px;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .bg {
+      width: 100%;
+      height: 100%;
+      background: url(./bg.jpg) no-repeat center / cover;
+      transition: 1s;
+      position: absolute;
+    }
+    div:hover .bg {
+      transform: scale(1.2);
+      /* size를 cover로 넣으면 transition 적용이 안됨 */
+      /* 근데 또 100%로 하면 이미지가 짤리는 경우가 발생 */
+      /* 그래서 div로 한번 감싸서 사용! */
+      /* width, height 사용하면 센터가 아닌 대각선 방향으로 커짐 */
+      /* 그래서 transform 속성을 사용! */
+    }
+    section {
+      position: relative;
+      font-size: 100px;
+      line-height: 700px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+  <div class="slider">
+    <div class="bg"></div>
+    <section>배경이미지</section>
+  </div>
+</body>
+
+</html>
