@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script src="prefixfree.min.js"></script>
+    <style>
+        section { width: 100px; height: 100px; border: 5px solid #000; margin:50px;  }
+        div { width: 100px; height: 100px; background: #ff0000; }
+
+        /* 변환함수 적용하기 */
+        section:nth-child(1):hover div { }
+        section:nth-child(2):hover div { }
+        section:nth-child(3):hover div { }
+        section:nth-child(4):hover div { }
+    </style>
+</head>
+<body>
+    <section>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+    </section>
+    <section>
+        <div></div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,41 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8" />
+    <title>transition 속성</title>
+    <style>
+        * { margin: 0; padding: 0; }
+        body { font-family: "맑은 고딕", 돋움; }
+        header h1, header p { display: none; }
+
+        #property1 h2 { font-size: 2em; font-weight: bold; letter-spacing: -1px; }
+        #property1 p { font-size: 1.5em; margin-left: 50px; color: #fcff00; }
+        #property1 { overflow: hidden; width: 150px; height: 50px;
+                    padding: 0 30px; background-color: red; color: #fff; }
+        #property1:hover {  }
+
+        #property2 h2 { margin-bottom: 20px; font-size: 2em; font-weight: bold; letter-spacing: -1px; }
+        #property2 { overflow: hidden; width: 150px; height: 50px;
+                    margin-top: 30px; padding: 0 30px;
+                    background-color: #0094ff; color: #fff; }
+        #property2:hover {  }
+
+    </style>
+</head>
+<body>
+    <header>
+			<h1>CSS3 속성을 이용한 변형과 애니메이션</h1>
+			<p>움직임을 구현할 수 있는 기능으로는 변형속성과 애니메이션 속성이 있다</p>
+		</header>
+		<section>
+			<article id="property1">
+                <h2>transition</h2>
+                <p>변형을 이용하여 움직임을 구현한다</p>
+			</article>
+			<article id="property2">
+				<h2>animation</h2>
+                <p>다양한 애니메이션 속성을 이용한다</p>
+			</article>
+		</section>
+</body>
+</html>
