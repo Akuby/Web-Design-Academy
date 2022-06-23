@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg - circle</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+      /* 시작점을 바꾸기 위해 원을 회전 */
+      /* 그러나 회전은 circle이 아닌 svg에 줘야 함 */
+      transform: rotate(-90deg);
+    }
+    circle {
+      stroke-width: 1px;
+      stroke: #000;
+      fill: #fff;
+      cx: 250;
+      cy: 250;
+      r: 200;
+      stroke-dasharray: 1257;
+      stroke-dashoffset: 1257;
+      animation: lineMove 3s linear forwards infinite;
+
+    }
+    @keyframes lineMove{
+      to { stroke-dashoffset: -1257 }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <circle />
+  </svg>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg - rectangle</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    rect {
+      width: 500px;
+      height: 500px;
+      /* line이 아닌 rect는 x1을 쓰지 않아서 css에 적어도 됨 */
+      x: 0;
+      y : 0;
+      stroke-width: 300px;
+      stroke-dasharray: 2000;
+      /* 선의 총 길이 */
+      stroke-dashoffset: 2000;
+      /* 처음에 숨길 영역의 길이 */
+      stroke: rgb(134, 134, 134);
+      fill: white;
+    }
+    rect:hover {
+      animation: lineMove 2s forwards ;
+      animation-timing-function: ease-in-out;
+    }
+    @keyframes lineMove{
+      to { stroke-dashoffset: 0 }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <rect />
+  </svg>
+</body>
+</html>

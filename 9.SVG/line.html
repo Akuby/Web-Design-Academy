@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg - line</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    line {
+      stroke-width: 1px;
+      stroke: black;
+      stroke-dasharray: 400;
+      stroke-dashoffset: 400;
+      animation: lineMove 1s forwards;
+    }
+
+    @keyframes lineMove{
+      to { stroke-dashoffset: 0 }
+    }
+
+  </style>
+</head>
+<body>
+  <svg>
+    <line 
+    x1="50" y1="250"
+    x2="450" y2="250"
+    />
+  </svg>
+</body>
+</html>
