@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg - path2</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    path {
+      fill: transparent;
+      stroke-width: 1px;
+      stroke: rgb(255, 0, 0);
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: lineMove 1s infinite;
+    }
+    @keyframes lineMove{
+      to { stroke-dashoffset: -100 }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <path 
+    d="
+    m250 100
+    l150 300
+    l-300 0
+    l150 -300
+    z"/>
+  </svg>
+</body>
+</html>

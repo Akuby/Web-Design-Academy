@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    path {
+      fill: none;
+      stroke-width: 1px;
+      stroke: #000;
+      stroke-dasharray: 1060;
+      stroke-dashoffset: 1060;
+      animation: lineMove 1s infinite alternate;
+    }
+    @keyframes lineMove {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <path d="
+    M400 320
+    L400 400
+    L100 400
+    L100 100
+    L400 100
+    L400 170
+    z
+    "/>
+  </svg>
+</body>
+</html>

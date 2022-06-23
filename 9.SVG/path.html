@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>svg - path</title>
+  <style>
+    svg {
+      width: 500px;
+      height: 500px;
+      border: 1px solid #000;
+    }
+    path {
+      fill: #fff;
+      stroke-width: 1px;
+      stroke: #000;
+      stroke-dasharray: 300;
+      stroke-dashoffset: 300;
+      /* animation: lineMove 1s linear infinite forwards; */
+    }
+    @keyframes lineMove{
+      to { stroke-dashoffset: -300 }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <!-- 1. 절대위치 -->
+    <!-- <path 
+    d="
+    M100 100 L400 100, 
+    M400 100 L400 400,
+    M400 400 L100 400,
+    M100 400 L100 100
+    "
+    /> -->
+    <!-- <path d="
+    M100 100 L400 100, 
+    L400 400,
+    L100 400,
+    L100 100 Z
+    "/> -->
+    <!-- 이렇게 이어서 적으면 연결된 하나의 도형으로 인식한다. -->
+    <!-- 애니메이션 의도에 따라 위처럼, 아래처럼 적을 수 있다. -->
+
+    <!-- 2. 상대위치 -->
+    <path 
+    d="
+    m100 100 
+    l300 0 
+    l0 300
+    l-300 0
+    z
+    "/>
+  </svg>
+</body>
+</html>
