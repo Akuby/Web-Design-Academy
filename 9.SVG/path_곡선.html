@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>패스 곡선</title>
+  <style>
+    svg {
+      width: 1000px;
+      height: 300px;
+      border: 1px solid #000;
+    }
+    path {
+      fill: none;
+      stroke-width: 1;
+      stroke: #000;
+      stroke-dasharray: 1060;
+      stroke-dashoffset: 1060;
+      animation: lineMove 1s linear infinite alternate;
+    }
+    @keyframes lineMove {
+      to {
+        stroke-dashoffset: 0;
+      }
+    }
+  </style>
+</head>
+<body>
+  <svg>
+    <path d="
+    M 0 150
+    Q 125 0 250 150,
+    T 500 150
+    750 150
+    1000 150
+    "
+    />
+    <path d="
+    M 0 140
+    Q 125 20 
+      250 140,
+    T 500 150
+      750 150
+      1000 150
+    "
+    />
+  </svg>
+</body>
+</html>
