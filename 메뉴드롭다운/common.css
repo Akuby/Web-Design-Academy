@@ -1,0 +1,36 @@
+@charset "utf-8";
+/* 초기화 */
+* { margin: 0; padding: 0; list-style: none; text-decoration: none; }
+h2 { position: absolute; left: -9999px; }
+
+body { position: relative; min-width: 1000px; }
+/* 헤더 */
+div#wrap { overflow: hidden; position: absolute; top: 0; left: 0; width: 100%; height: 128px;
+          border-bottom: 1px solid #ccc; background: #fff;
+          transition: 0.5s; }
+div#wrap::before { content: ""; position: absolute; top: 128px; width: 100%;
+                  border-bottom: 1px solid #ccc; }
+header { width: 1000px; margin: 0 auto; padding-top: 37px;
+        box-sizing: border-box;
+        display: flex; }
+div#wrap:hover { height: 325px; }
+h1 { width: 154px; margin-top: 30px; }
+/* lnb */
+nav#lnb { position: absolute; top: 0; left: 0;
+          width: 100%; height: 37px; background: #f1f1f2; }
+nav#lnb ul { width: 1000px; margin: 0 auto;
+            display: flex; justify-content: flex-end; }
+nav#lnb ul li { margin-left: 20px; line-height: 37px; }
+nav#lnb ul li a { color: #777; font-weight: bold; font-size: 12px; }
+/* gnb */
+nav#gnb { margin: 38px 0 0 70px; }
+nav#gnb > ul { width: 780px; text-align: center; display: flex; justify-content: space-around; }
+nav#gnb > ul > li > a { display: block; height: 53px; font-size: 18px; color: #000; }
+nav#gnb > ul > li:hover > a {  color: #f70; }
+nav#gnb > ul > li > ul { padding-top: 20px; }
+nav#gnb > ul > li > ul li { line-height: 40px; }
+nav#gnb > ul > li > ul li a { color: #000; font-size: 16px; }
+nav#gnb > ul > li > ul li a:hover { color: #f50; text-decoration: underline; }
+/* 슬라이더 */
+div#sliderWrap { overflow: hidden; height: 550px; padding-top: 128px; }
+section {  width: 1500px; height: 550px; margin: 0 auto; background: linear-gradient(to right, #a4cfb8, #b6c9e9); }
