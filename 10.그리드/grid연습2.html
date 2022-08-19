@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap { 
+      display: grid;
+      border: 1px solid #000;
+      padding: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(200px, auto));
+      /* grid-template-columns: repeat(auto-fill, minmax(200px, auto)); */
+      /* 크기 지정 시, row가 몇개가 될 지 모르기 때문에 모두 지정해줘야 한다 */
+      grid-template-rows: 100px 100px 100px 100px 100px 100px;
+    }
+    .item {
+      /* margin: 10px; */
+      padding: 20px;
+      border: 1px solid #000;
+      background: #9cd9ff;
+      font-size: 30px;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+    <div class="item item6">6</div>
+    <!-- <div class="item item7">7</div>
+    <div class="item item8">8</div>
+    <div class="item item9">9</div> -->
+  </div>
+</body>
+</html>

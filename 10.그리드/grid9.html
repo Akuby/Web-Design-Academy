@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap { 
+      border: 1px solid #000;
+      padding: 20px;
+      display: grid;
+      grid-template-areas: 
+      'header header header header header header'
+      'navi main main main aside aside'
+      'navi footer footer footer footer footer'
+      ;
+    }
+    .item {
+      padding: 20px;
+      border: 1px solid #000;
+      background: #9cd9ff;
+      font-size: 30px;
+    }
+    .item1 {
+      grid-area: header;
+    }
+    .item2 {
+      grid-area: navi;
+    }
+    .item3 {
+      grid-area: main;
+    }
+    .item4 {
+      grid-area: aside;
+    }
+    .item5 {
+      grid-area: footer;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="item item1">header</div>
+    <div class="item item2">navi</div>
+    <div class="item item3">main</div>
+    <div class="item item4">aside</div>
+    <div class="item item5">footer</div>
+  </div>
+</body>
+</html>

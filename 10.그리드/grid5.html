@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    #wrap { 
+      border: 1px solid #000;
+      padding: 20px;
+      display: grid;
+      grid-template-columns: auto auto auto;
+      gap: 10px;
+      text-align: center;
+    }
+    .item {
+      padding: 20px;
+      border: 1px solid #000;
+      background: #9cd9ff;
+      font-size: 30px;
+    }
+    .item1 {
+      /* grid-column-start: 1;
+      grid-column-end: 3; */
+      /* grid-column: 1 / 3; 확장될 선의 번호 */
+      /* grid-column: 1 / span 2; 확장될 칸의 번호*/
+      grid-column: 1 / 3;
+    }
+    .item2 {
+      /* 앞쪽 요소에 colunm 지정했으면 다음 요소에는 칼럼 위치 지정 필수 */
+      grid-column: 3;
+      grid-row: 1 / span 2;
+    }
+    .item5 {
+      grid-column: 1 / 4;
+    }
+  </style>
+</head>
+<body>
+  <div id="wrap">
+    <div class="item item1">1</div>
+    <div class="item item2">2</div>
+    <div class="item item3">3</div>
+    <div class="item item4">4</div>
+    <div class="item item5">5</div>
+  </div>
+</body>
+</html>
